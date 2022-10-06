@@ -1,18 +1,22 @@
 $black: rgb(30, 30, 30);
+$red: rgba(255,91,91,1);
+$pink: #c252e1;
+$blue: #6ecbf5;
 
 .container {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    // background-color: aqua;
-    // background-color: black;
+    background-color: black;
+    // image credit: https://giphy.com/ericaofanderson/
     background-image: url('https://media2.giphy.com/media/2SYpZ92iLQsF6QZl5u/giphy.gif?cid=ecf05e470hybfbxgz4ke05s9j7a55gxv0v9af8ahrq2kaqtu&rid=giphy.gif&ct=g');
     // background-image: url('https://media0.giphy.com/media/3o7aCPFfNF8uCXO6xa/giphy.gif?cid=ecf05e47xhw3ui7q1jr6md8i31kc5b15mmlbn9wlt8s59ntz&rid=giphy.gif&ct=g');
     background-size: cover;
     background-position: center;    
     // opacity: .5; 
     .innerContainer {
+
 
         // background-color: aquamarine;
         display: grid;
@@ -21,6 +25,7 @@ $black: rgb(30, 30, 30);
         
         // grid-template-rows: 25vh 25vh 25vh 25vh;
         grid-template-rows: 20vh 20vh 20vh 20vh;
+        // grid-template-rows: 15vh 15vh 15vh 15vh;
         gap: 20px;
 
         // grid-template-columns: 50vw 50vw;
@@ -29,6 +34,7 @@ $black: rgb(30, 30, 30);
         section {
             background-color: rgba(255, 255, 255, 0.89);
             backdrop-filter: blur(10px);
+
             
             // width: 450px;
             cursor: pointer;
@@ -37,20 +43,32 @@ $black: rgb(30, 30, 30);
             border-left: 10px solid rgb(30, 30, 30);
             // border-right: 10px solid black;
             
-            display: flex;
-            align-items: center;
-            gap: 20px;
+            
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            // box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
             // padding-left: 10px;
             padding: 10px;
             padding-right: 20px;
             // &:is(:last-child) {
-            //     border-bottom: none;
-            // }
-            color: $black;
-
+                //     border-bottom: none;
+                // }
+                color: $black;
+                
+                display: flex;
+                align-items: center;
+                // align-items: flex-start;
+                // justify-content: flex-start;
+                
+                
+                gap: 20px;
             div {
+                // border-left: 2px solid rgba(30, 30, 30, 0.517);
+                // padding-left: 10px;
+                // padding-left: 20px;
+
+
+
                 display: flex;
                 flex-direction: column;
                 h1 {
@@ -64,23 +82,53 @@ $black: rgb(30, 30, 30);
             }
             
             &:hover {
-                transition: background-color .2s, color .2s;
+                transition: background-color .2s, color .2s, transform .2s;
                 background-color: $black;
                 color: white;
+                transform: scale(102.5%);
+                div {
+                    transition: transform .2s;
+                    transform: translateX(2.5px) rotate(-.5deg) scale(102.5%);
+                    // transform: scale(102.5%);
+                }
                 svg {
-                    transition: fill .2s;
-                    fill: white
+                    transition: fill .2s, transform .2s;
+                    fill: white;
+                    // transform: rotate(2.5deg) scale(120%);
+                    transform: rotate(2.5deg) scale(130%);
                 }
             }
+            
 
         }
-            #dev {
-                // background-color: black;
-                // background-image: url('https://media2.giphy.com/media/sk6yL9EGVeAcE/giphy.gif?cid=ecf05e4767n682sx882dqcizoxjp4o2pkqpop0ivadf8h5d1&rid=giphy.gif&ct=g');
-                // background-image: url('https://media2.giphy.com/media/2SYpZ92iLQsF6QZl5u/giphy.gif?cid=ecf05e470hybfbxgz4ke05s9j7a55gxv0v9af8ahrq2kaqtu&rid=giphy.gif&ct=g');
-                // background-size: cover;
-                // background-position: center;                
-                // opacity: .2;
+            // #dev {
+            //     transform: rotate(-.5deg);
+            // }
+            // #audio {
+            //     transform: rotate(.5deg);
+            // }
+            // #three {
+            //     transform: rotate(-.5deg);
+            // }
+            #human {
+                // transform: rotate(4deg);
+                // transform: perspective(20px);
+                // transform: rotateZ(90deg);
+                // transform: skewY(-20deg);
+                transform: translateY(8px) rotate(2.5deg);
+                &:hover {
+                    
+                    color: #6ecbf5;
+                    transform: translateY(8px) rotate(2.5deg) scale(105%);
+                    // transform: translateY(8px) rotate(-1deg) scale(105%);
+                    // svg {
+                    //     transition: transform 5s;
+                    //     // transform: rotate(900deg);
+                    //     transform: rotate(897.5deg) scale(130%);
+                    //     // transform: rotate(360deg);
+                    // }
+                }
+                
             }
     }
 
