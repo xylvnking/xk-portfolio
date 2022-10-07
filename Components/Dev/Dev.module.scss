@@ -8,61 +8,72 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 #container {
     h1, h2, h3 { margin: 0px;}
     font-family: 'Poppins', sans-serif;
-    // width: 100vw;
+    // position: relative;
+    // top: 0px;
+    
     #hero {
-        // width: 100%;
-        background-color: $black;
-        color: white;
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
-        // font-size: 5vw;
         font-size: 32px;
-        text-align: center;
-        h2 { font-weight: 400;}
-        h2 { font-weight: 400; font-size: 24px}
-        #techLogos {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            text-align: center;
-            font-size: 16px;
-            margin: 10px;
-            padding: 10px;
-            .techGridItem {
-                display: flex;
-                // flex-direction: column;
-                gap: 10px;
-                justify-content: center;
-                align-items: center;
-                p {
-                    color: rgb(236, 236, 236);
-                }
-                .techLogoContainer {
-                    width: 50px;
-                }
-            }
+        // text-align: center;
 
-        }
+        // margin: 5px;
+        // box-shadow: $subtle-shadow;
+        // border-radius: 10px;
+
+        // h1 { text-shadow: $subtle-shadow; }
+        h2 { font-weight: 400; font-size: 24px;}
+        cursor: default;
+        // background-color: #c252e1;
+
+        
+
+        // background-color: $black;
+        // color: white;
+        // filter: invert(100%);
+        // background-color: black;
+        color: $black;
+        // color: #c252e1;
 
         #profilePhotoContainer {
-            // padding: 10px;
             margin: 10px;
             width: 200px;
-            border: 5px solid white;
+            border: 5px solid $black;
             border-radius: 50%;
             display: flex;
             flex-direction: column;
             overflow: hidden;
-
+            box-shadow: $subtle-shadow;
+            #profilePhoto {}
+        }
+        #techLogos {
+            display: grid;
+            // grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            // gri
+            // text-align: center;
+            font-size: 16px;
+            row-gap: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
             
-            #profilePhoto {
-                border-radius: 10px;
+            
+            .techGridItem {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                p { margin: 0px; font-size: 16px; }
+                .techLogoContainer { width: 50px; }
             }
         }
+
+        
         #githubLinkContainer {
             display: flex;
             align-items: center;
@@ -72,17 +83,20 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             cursor: pointer;
             padding-left: 20px;
             padding-right: 20px;
-            margin: 20px;
-            border: 2px solid white;
-            border-left: 10px solid white;
+            margin-bottom: 20px;
+            border: 2px solid $black;
+            border-left: 10px solid $black;
             border-radius: 10px;
-            // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            box-shadow: $subtle-shadow;
+            
             &:hover {
-                // transition: border-left-width .2s;
-                // border-left-color: rgb(228, 228, 228);
-                border-left-color: $blue;
-                background-color: rgb(228, 228, 228);
+                background-color: #6ecbf5;
+                border-color: white;
+                transition: border-color .2s, background-color .2s, transform .2s;
+                svg { transition: fill .2s; fill: white }
+                img { transition: filter .2s; filter: invert(100%); }
             }
+            &:active { box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
             
 
             #githubIconContainer {
@@ -90,18 +104,14 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 align-items: center;
                 justify-content: center;
                 width: 50px;
-                #githubIcon {
-                }
+                // width: 35px;
             }
             #githubTextContainer {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                // padding: 10px;
-                // margin: 10px;
                 width: 100px;
-                #githubText {
-                }
+                // width: 75px;
             }
         }
 
