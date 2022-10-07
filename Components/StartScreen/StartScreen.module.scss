@@ -4,11 +4,14 @@ $pink: #c252e1;
 $blue: #6ecbf5;
 
 .container {
+    // transform: scale(120%);
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    // background-color: black;
+    background: rgb(194,82,225);
+    background: linear-gradient(90deg, rgba(194,82,225,1) 0%, rgba(110,203,245,1) 88%);
     // image credit: https://giphy.com/ericaofanderson/
     background-image: url('https://media2.giphy.com/media/2SYpZ92iLQsF6QZl5u/giphy.gif?cid=ecf05e470hybfbxgz4ke05s9j7a55gxv0v9af8ahrq2kaqtu&rid=giphy.gif&ct=g');
     // background-image: url('https://media0.giphy.com/media/3o7aCPFfNF8uCXO6xa/giphy.gif?cid=ecf05e47xhw3ui7q1jr6md8i31kc5b15mmlbn9wlt8s59ntz&rid=giphy.gif&ct=g');
@@ -31,7 +34,19 @@ $blue: #6ecbf5;
         // grid-template-columns: 50vw 50vw;
         // grid-template-rows: 50vh 50vh;
 
+        // font-size: 24px;
+        
+        
+        
         section {
+            font-size: 1.25em;
+            @media (max-width: 450px) { font-size: 1em; }
+            svg { 
+                transform: scale(120%);
+                margin-left: 10px;
+            }
+
+
             background-color: rgba(255, 255, 255, 0.89);
             backdrop-filter: blur(10px);
 
@@ -86,6 +101,9 @@ $blue: #6ecbf5;
                 background-color: $black;
                 color: white;
                 transform: scale(102.5%);
+
+                // display: flex;
+
                 div {
                     transition: transform .2s;
                     transform: translateX(2.5px) rotate(-.5deg) scale(102.5%);
