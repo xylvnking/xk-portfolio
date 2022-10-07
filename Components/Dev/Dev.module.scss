@@ -1,0 +1,113 @@
+$black: rgb(30, 30, 30);
+$red: rgba(255,91,91,1);
+$pink: #c252e1;
+$blue: #6ecbf5;
+$subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+#container {
+    h1, h2, h3 { margin: 0px;}
+    font-family: 'Poppins', sans-serif;
+    // width: 100vw;
+    #hero {
+        // width: 100%;
+        background-color: $black;
+        color: white;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        // font-size: 5vw;
+        font-size: 32px;
+        text-align: center;
+        h2 { font-weight: 400;}
+        h2 { font-weight: 400; font-size: 24px}
+        #techLogos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px;
+            padding: 10px;
+            .techGridItem {
+                display: flex;
+                // flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                p {
+                    color: rgb(236, 236, 236);
+                }
+                .techLogoContainer {
+                    width: 50px;
+                }
+            }
+
+        }
+
+        #profilePhotoContainer {
+            // padding: 10px;
+            margin: 10px;
+            width: 200px;
+            border: 5px solid white;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            
+            #profilePhoto {
+                border-radius: 10px;
+            }
+        }
+        #githubLinkContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            cursor: pointer;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 20px;
+            border: 2px solid white;
+            border-left: 10px solid white;
+            border-radius: 10px;
+            // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            &:hover {
+                // transition: border-left-width .2s;
+                // border-left-color: rgb(228, 228, 228);
+                border-left-color: $blue;
+                background-color: rgb(228, 228, 228);
+            }
+            
+
+            #githubIconContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                #githubIcon {
+                }
+            }
+            #githubTextContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // padding: 10px;
+                // margin: 10px;
+                width: 100px;
+                #githubText {
+                }
+            }
+        }
+
+        
+    }
+    section {
+        // background-color: aqua;
+    }
+}
