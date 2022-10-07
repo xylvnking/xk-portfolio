@@ -6,6 +6,7 @@ import styles from './Dev.module.scss'
 
 import Hero from './Hero'
 import AudioSummary from './AudioSummary'
+import Projects from './Projects'
 
 export default function DevComponent() {
   return (
@@ -22,14 +23,16 @@ export default function DevComponent() {
             <section id={styles["audioSummary"]}>
                 <AudioSummary />
             </section>
+            <div style={{height: '50vw'}}>
+
+            </div>
             {/* <section id={styles["techstack"]}>
                 <h1>Technologies</h1>
-            </section>
+            </section> */}
             <section id={styles["projects"]}>
-                <h1>projects</h1>
-                <a>Github</a>
+                <Projects />
             </section>
-            <section id={styles["futureInterests"]}>
+            {/* <section id={styles["futureInterests"]}>
                 <h1>future interests</h1>
             </section> */}
         </main>

@@ -31,14 +31,14 @@ import viceLogo from '../../public/static/audiopresslogos/vice.png'
 export default function AudioSummary() {
   return (
     <>
-        <p>
+        <p id={styles['paragraph1']}>
             During my 
             <span className={styles.blueText}> 10 years </span>
             of professional freelance experience as an audio engineer I've learned a lot about 
             <span className={styles.blueText}> people, communication, time management, and expectations.</span>
         </p>
              <br />
-        <p>
+        <p id={styles['paragraph2']}>
             Songs I've engineered have amassed 
             <span className={styles.greenText}> 60'000'000 </span> 
             streams and earned more than 
@@ -48,7 +48,6 @@ export default function AudioSummary() {
         </p>
             <br />
         <section id={styles["pressLogosContainer"]}>
-            
             <div className={styles.pressLogoWrapper}>
                 <Image src={muchLogo} objectFit='contain' />
             </div>
@@ -97,10 +96,6 @@ export default function AudioSummary() {
             <div className={styles.pressLogoWrapper}>
                 <Image src={cbcLogo} objectFit='contain' />
             </div>
-            
-            
-            
-            
             {/* <div className={styles.pressLogoWrapper}>
                 <Image src={sofarLogo} objectFit='contain' />
             </div>
@@ -125,7 +120,6 @@ export default function AudioSummary() {
             <div className={styles.pressLogoWrapper}>
                 <Image src={ridethetempoLogo} objectFit='contain' />
             </div> */}
-            
         </section>
 
     </>

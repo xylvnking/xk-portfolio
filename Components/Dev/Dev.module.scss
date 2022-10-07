@@ -123,6 +123,12 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             max-width: 50ch;
             margin: 0px;
             cursor: default;
+            
+        }
+        #paragraph1 {
+        }
+        #paragraph2 {
+            
         }
 
         #pressLogosContainer {
@@ -139,6 +145,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: $subtle-shadow;
+            // transform: rotate(.5deg);
             // filter: invert(85%);
             // grid-template-rows: 100px;
             // background-color: #00a3ff;
@@ -148,5 +155,48 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         
 
+    }
+    #projects {
+        margin-top: 75px;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // align-items: flex-end;
+        // width: 200px;
+        // background-color: #00a3ff;
+        color: $black;
+        svg {
+            transform: scale(200%);
+            margin-bottom: 25px;
+        }
+        h1 {
+            // font-size: 32px;
+            font-size: 10vw;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            font-size: 24;
+            font-size: 6vw;
+        }
+        h3 {
+            font-size: 5vw;
+            font-weight: 400;
+            opacity: .7;
+        }
+
+        #nextImageWrapper {
+            
+            // width: 50%;
+            img {
+                // border-radius: 10px;
+            }
+        }
+
+
+        // background-color: #00a3ff;
     }
 }
