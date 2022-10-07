@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+
 import styles from './Dev.module.scss'
+
 import pp from '../../public/static/pp.png'
 
 import githubIcon from '../../public/static/githubIcon.png'
@@ -23,7 +26,6 @@ import gitLogo from '../../public/static/git.png'
 import threeLogo from '../../public/static/three.png'
 import blenderLogo from '../../public/static/blender.png'
 import photoshoplogo from '../../public/static/photoshop.png'
-import Link from 'next/link'
 
 
 export default function Hero() {

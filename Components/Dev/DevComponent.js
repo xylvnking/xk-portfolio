@@ -1,8 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+
 import styles from './Dev.module.scss'
+
 import Hero from './Hero'
+import AudioSummary from './AudioSummary'
 
 export default function DevComponent() {
   return (
@@ -15,29 +18,21 @@ export default function DevComponent() {
         <main>
             <section id={styles["hero"]}>
                 <Hero />
-                {/* <h1>Dylan King</h1>
-                <h2>Front-End Developer</h2>
-                <h3>10 yoe pro audio</h3> */}
-                
             </section>
-            <section id={styles["audiobackground"]}>
-                <h1>Transferrable skills from audio engineering to software development</h1>
-                During my 10 years of professional freelance experience as an audio engineer I've learned a lot about people, communication, time management, and expectations.
-                Songs I've engineered have amassed 60'000'000 streams and earned more than $400'000 for my clients who have over 700,000 monthly listeners and consistently get featured on major platforms:
+            <section id={styles["audioSummary"]}>
+                <AudioSummary />
             </section>
-            <section id={styles["techstack"]}>
+            {/* <section id={styles["techstack"]}>
                 <h1>Technologies</h1>
             </section>
             <section id={styles["projects"]}>
                 <h1>projects</h1>
                 <a>Github</a>
             </section>
+            <section id={styles["futureInterests"]}>
+                <h1>future interests</h1>
+            </section> */}
         </main>
-        
-        future interests
     </div>
   )
 }
-
-
-{/* <section id={styles["audio"]}></section> */}
