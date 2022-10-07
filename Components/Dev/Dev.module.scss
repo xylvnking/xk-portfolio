@@ -14,29 +14,20 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     #hero {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
+        // justify-content: flex-start;
+        
+        text-align: center;
         align-items: center;
-        padding: 10px;
-        font-size: 32px;
-        // text-align: center;
-
-        // margin: 5px;
-        // box-shadow: $subtle-shadow;
-        // border-radius: 10px;
-
-        // h1 { text-shadow: $subtle-shadow; }
-        h2 { font-weight: 400; font-size: 24px;}
-        cursor: default;
+        // width: 500px;
         // background-color: #c252e1;
 
-        
-
-        // background-color: $black;
-        // color: white;
-        // filter: invert(100%);
-        // background-color: black;
+        padding: 10px;
+        font-size: 32px;
+        cursor: default;
         color: $black;
-        // color: #c252e1;
+        
+        h2 { font-weight: 400; font-size: 24px;}
 
         #profilePhotoContainer {
             margin: 10px;
@@ -47,14 +38,12 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             flex-direction: column;
             overflow: hidden;
             box-shadow: $subtle-shadow;
+            align-self: center;
             #profilePhoto {}
         }
         #techLogos {
             display: grid;
-            // grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            // gri
-            // text-align: center;
             font-size: 16px;
             row-gap: 20px;
             padding-top: 10px;
@@ -90,26 +79,30 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             box-shadow: $subtle-shadow;
             
             &:hover {
-                background-color: #6ecbf5;
-                border-color: white;
-                transition: border-color .2s, background-color .2s, transform .2s;
-                svg { transition: fill .2s; fill: white }
-                img { transition: filter .2s; filter: invert(100%); }
+                // background-color: #6ecbf5;
+                border-color: $blue;
+                transition: border-color .2s, background-color .2s, transform .1s;
+                // svg { transition: fill .2s; fill: white }
+                // img { transition: filter .2s; filter: invert(100%); }
             }
             &:active { box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; }
-            
+            svg { fill: $black}
+            // svg { fill: $blue}
 
             #githubIconContainer {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 50px;
+                // filter: brightness(0.4);
                 // width: 35px;
+                filter: contrast(115%);
             }
             #githubTextContainer {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                opacity: .9;
                 width: 100px;
                 // width: 75px;
             }

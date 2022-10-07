@@ -4,6 +4,7 @@ import styles from './Dev.module.scss'
 import pp from '../../public/static/pp.png'
 
 import githubIcon from '../../public/static/githubIcon.png'
+import githubIconGif from '../../public/static/githubgif.gif'
 import githubIconBlack from '../../public/static/githubblackicon.png'
 import githubText from '../../public/static/githubText.png'
 import githubTextBlack from '../../public/static/githubblacktext.png'
@@ -65,7 +66,8 @@ export default function Hero() {
                 <p>GIT</p>    
             </div>
             <div className={styles.techGridItem}>
-                <div className={styles.techLogoContainer} style={{opacity: .7}}>
+                {/* <div className={styles.techLogoContainer} style={{opacity: .7}}> */}
+                <div className={styles.techLogoContainer} style={{opacity: .85}}>
                     <Image src={nextLogo} objectFit='contain' />
                 </div>
                 <p>Next</p>    
@@ -86,7 +88,8 @@ export default function Hero() {
         <a target='_blank' href='https://github.com/xylvnking'>
         <div id={styles["githubLinkContainer"]}>
             <div id={styles["githubIconContainer"]}>
-                <Image src={githubIconBlack} objectFit='contain' />
+                {/* <Image src={githubIconBlack} objectFit='contain' /> */}
+                <Image src={githubIconGif} objectFit='contain' />
             </div>
             <div id={styles["githubTextContainer"]}>
                 <Image src={githubTextBlack} objectFit='contain' />
