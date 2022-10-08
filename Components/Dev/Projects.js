@@ -29,10 +29,11 @@ export default function Projects() {
         {/* <h3>fullstack SaaS</h3> */}
 
         {/* <div id={styles['nextImageWrapper']}> */}
-        <section className={styles.project}>
+        <section className={styles.mainProject}>
             
                 <h2>Pro Audio Project Collaboration Platform</h2>
                 <h3>Fullstack SaaS application for asynchronous workflows</h3>
+                
                 <section className={styles.projectTechLogoGrid}>
                     <div className={styles.projectTechLogoGridItem}>
                         <div className={styles.nextImageWrapperTechLogo}>
@@ -66,6 +67,26 @@ export default function Projects() {
                     <p>
                         Although my main focus long-term is front-end development, I'm still working as a freelance audio engineer while building that new branch of my career. <strong>This application is also to help fascilitate my audio work</strong> - streamlining the workflow of transfering file versions to clients and having them sending back revision notes, all while giving me a practical real-world opportunity to make great use of my front-end development skills.
                     </p>
+                </section>
+                <section className={styles.projectLinks}>
+
+                    {/* <div className={styles.githubLinkContainer} style={{border: 'none', boxShadow: 'none'}}> */}
+                    <div className={styles.projectLinkButton}>
+                        <a className={styles.liveSiteLink}>Visit the live site</a>
+                        {/* <svg fill='black' xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413Q19.825 21 19 21Zm4.7-5.3-1.4-1.4L17.6 5H14V3h7v7h-2V6.4Z"/></svg> */}
+                        <svg fill='#1e1e1e'  xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                    </div>
+                    {/* <div className={styles.githubLinkContainer} style={{border: 'none', boxShadow: 'none'}}> */}
+                    {/* <div className={styles.githubLinkContainer} style={{border: 'none', boxShadow: 'none'}}> */}
+                    <div className={styles.projectLinkButton}>
+                        <a className={styles.liveSiteLink}>View code on GitHub</a>
+                        {/* <svg fill='black' xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413Q19.825 21 19 21Zm4.7-5.3-1.4-1.4L17.6 5H14V3h7v7h-2V6.4Z"/></svg> */}
+                        <svg fill='#1e1e1e' xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                    </div>
+
+                    
+
+
                 </section>
                 <div className={styles.nextImageWrapperScreenshot}>
                     <Image src={transferss} objectFit='contain' />
@@ -144,15 +165,8 @@ export default function Projects() {
                     
 
                 </section>
-
-
-            
-            
                 <section className={styles.projectLinks}>
-                    {/* <button>visit the live site</button> */}
 
-
-                    {/* <a target='_blank' href='https://github.com/xylvnking'> */}
                     <div className={styles.githubLinkContainer} style={{border: 'none', boxShadow: 'none'}}>
                         <div className={styles.githubIconContainer}>
                             
@@ -161,9 +175,6 @@ export default function Projects() {
                         <a className={styles.liveSiteLink}>Visit the live site</a>
                         <svg fill='black' xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413Q19.825 21 19 21Zm4.7-5.3-1.4-1.4L17.6 5H14V3h7v7h-2V6.4Z"/></svg>
                     </div>
-                    {/* </a> */}
-
-
 
                     <a target='_blank' href='https://github.com/xylvnking'>
                     <div className={styles.githubLinkContainer}>
@@ -172,13 +183,18 @@ export default function Projects() {
                         </div>
                         <div className={styles.githubTextContainer}>
                             <Image src={githubTextBlack} objectFit='contain' />
-                            {/* <Image src={'https://media1.giphy.com/media/IwSG1QKOwDjQk/giphy.gif?cid=ecf05e47pg01o3h9fgdjg0sfdx96ltc5oe5pvvi41j6w8vfw&rid=giphy.gif&ct=g'} objectFit='contain' layout='fixed' height={100} width={100}/> */}
                         </div>
                         <svg fill='black' xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M5 21q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413Q19.825 21 19 21Zm4.7-5.3-1.4-1.4L17.6 5H14V3h7v7h-2V6.4Z"/></svg>
                     </div>
                     </a>
-                    {/* <button>view code on github</button> */}
+
+
                 </section>
+
+
+            
+            
+              
 
             
         </section>
