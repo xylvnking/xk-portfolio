@@ -121,7 +121,7 @@ export default function AudioSummary() {
                 <Image src={ridethetempoLogo} objectFit='contain' />
             </div> */}
         </section>
-
+        <br />
     </>
   )
 }

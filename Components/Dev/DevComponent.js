@@ -23,12 +23,11 @@ export default function DevComponent() {
             <section id={styles["audioSummary"]}>
                 <AudioSummary />
             </section>
-            <div style={{height: '50vw'}}>
-
-            </div>
+            {/* <div style={{height: '50vw'}}></div> */}
             {/* <section id={styles["techstack"]}>
                 <h1>Technologies</h1>
             </section> */}
+            {/* <hr /> */}
             <section id={styles["projects"]}>
                 <Projects />
             </section>
