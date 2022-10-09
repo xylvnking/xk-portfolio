@@ -50,7 +50,7 @@ export default function Projects() {
                 {/* <div  id={styles['nextImageWrapper']}> */}
                 <section id={styles['mainProject']}>
 
-                    <h2>Pro Audio Project Collaboration Platform</h2>
+                    <h2>Pro Audio Project Collaboration Platform v3</h2>
                     <h3>Fullstack SaaS application for asynchronous workflows</h3>
 
                     <section className={styles.projectTechLogoGrid}>
@@ -94,7 +94,7 @@ export default function Projects() {
                             <svg fill='#1e1e1e' xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z" /></svg>
                         </div>
                         <div className={styles.projectLinkButton}>
-                            <a className={styles.liveSiteLink}>View code on GitHub</a>
+                            <a className={styles.liveSiteLink} target='_blank' href='https://github.com/xylvnking/xk-audio-filesharing'>View code on GitHub</a>
                             <svg fill='#1e1e1e' xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z" /></svg>
                         </div>
                     </section>
@@ -206,14 +206,14 @@ export default function Projects() {
                                 <Image src={hookdemosSS} objectFit='contain' />
                             </div>
                             <footer>
-                                <a>
-                                    <button>Visit the live site</button>
+                                <div>
+                                    <a target='_blank' href='https://xk-react-hooks-demos.vercel.app/'>Visit the live site</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
-                                <a>
-                                    <button>View the source code on GitHub</button>
+                                </div>
+                                <div>
+                                    <a target='_blank' href='https://github.com/xylvnking/xk-react-hooks-demos'>View the source code on GitHub</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
+                                </div>
                             </footer>
                         </article>
 
@@ -244,14 +244,49 @@ export default function Projects() {
                                 <Image src={markdownEditorSS} objectFit='contain' />
                             </div>
                             <footer>
-                                <a>
-                                    <button>Visit the live site</button>
+                                <div>
+                                    <a target='_blank' href='https://enchanting-kataifi-62b291.netlify.app/'>Visit the live site</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
-                                <a>
-                                    <button>View the source code on GitHub</button>
+                                </div>
+                                <div>
+                                    <a target='_blank' href='https://github.com/xylvnking/markdown-editor'>View the source code on GitHub</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
+                                </div>
+                            </footer>
+                        </article>
+
+
+                        <article className={styles.secondaryProject}>
+                            <header className={styles.secondaryProjectTitles}>
+                                <h1>3D Material Creator & Editor</h1>
+                                <h2>Custom editor created for Three.js to create and edit physically based materials</h2>
+                            </header>
+                            <div className={styles.secondaryProjectTechLogos}>
+                                <div className={styles.nextImageWrapperTechLogo}>
+                                    <Image src={reactLogo} objectFit='contain' />
+                                </div>
+                                <div className={styles.nextImageWrapperTechLogo}>
+                                    <Image src={threeLogo} objectFit='contain' />
+                                </div>
+                                <div className={styles.nextImageWrapperTechLogo}>
+                                    <Image src={substanceLogo} objectFit='contain' />
+                                </div>
+                            </div>
+                            <div className={styles.secondaryProjectDescription}>
+                                <p>Umami narwhal franzen, affogato selvage green juice tumeric direct trade semiotics aesthetic live-edge. Slow-carb raclette seitan single-origin coffee, tilde messenger bag dreamcatcher affogato hella photo booth.</p>
+                            </div>
+                            <div className={styles.screenshotImageWrapper}>
+                                <Image src={threeDeeEditorSS} objectFit='contain' />
+                            </div>
+                            <footer>
+                                <div>
+                                    <a target='_blank' href='https://voluble-sorbet-78b709.netlify.app/'>Visit the live site</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </div>
+                                <div>
+                                    <a target='_blank' href='https://github.com/xylvnking/3D-Asset-Editor'>View the source code on GitHub</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </div>
                             </footer>
                         </article>
 
@@ -298,14 +333,14 @@ export default function Projects() {
                                 <Image src={handdetectionSS} objectFit='contain' />
                             </div>
                             <footer>
-                                <a>
-                                    <button>Visit the live site</button>
+                                <div>
+                                    <a target='_blank' href='https://xk-tensorflow-threejs-hand-detection.vercel.app/'>Visit the live site</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
-                                <a>
-                                    <button>View the source code on GitHub</button>
+                                </div>
+                                <div>
+                                    <a target='_blank' href='https://github.com/xylvnking/xk-tensorflow-threejs-hand-detection'>View the source code on GitHub</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
+                                </div>
                             </footer>
                             {/* https://xk-tensorflow-threejs-hand-detection.vercel.app/ */}
                         </article>
@@ -340,51 +375,19 @@ export default function Projects() {
                                 <Image src={cultOfThreeSS} objectFit='contain' />
                             </div>
                             <footer>
-                                <a>
-                                    <button>Visit the live site</button>
+                                <div>
+                                    <a target='_blank' href='https://cult-of-three.vercel.app/'>Visit the live site</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
-                                <a>
-                                    <button>View the source code on GitHub</button>
+                                </div>
+                                <div>
+                                    <a target='_blank' href='https://github.com/xylvnking/cult-of-three'>View the source code on GitHub</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
+                                </div>
                             </footer>
                         </article>
 
 
-                        <article className={styles.secondaryProject}>
-                            <header className={styles.secondaryProjectTitles}>
-                                <h1>3D Material Creator & Editor</h1>
-                                <h2>Custom editor created for Three.js to create and edit physically based materials</h2>
-                            </header>
-                            <div className={styles.secondaryProjectTechLogos}>
-                                <div className={styles.nextImageWrapperTechLogo}>
-                                    <Image src={reactLogo} objectFit='contain' />
-                                </div>
-                                <div className={styles.nextImageWrapperTechLogo}>
-                                    <Image src={threeLogo} objectFit='contain' />
-                                </div>
-                                <div className={styles.nextImageWrapperTechLogo}>
-                                    <Image src={substanceLogo} objectFit='contain' />
-                                </div>
-                            </div>
-                            <div className={styles.secondaryProjectDescription}>
-                                <p>Umami narwhal franzen, affogato selvage green juice tumeric direct trade semiotics aesthetic live-edge. Slow-carb raclette seitan single-origin coffee, tilde messenger bag dreamcatcher affogato hella photo booth.</p>
-                            </div>
-                            <div className={styles.screenshotImageWrapper}>
-                                <Image src={threeDeeEditorSS} objectFit='contain' />
-                            </div>
-                            <footer>
-                                <a>
-                                    <button>Visit the live site</button>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
-                                <a>
-                                    <button>View the source code on GitHub</button>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
-                                </a>
-                            </footer>
-                        </article>
+                        
 
 
                     </div>
