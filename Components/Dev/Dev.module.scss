@@ -322,11 +322,12 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     align-items: center;
                     gap: 20px;
                     margin: 10px;
-                    cursor: pointer;
+                    // cursor: pointer;
                     .projectLinkButton {
                         display: flex;
                         align-items: center;
                         .liveSiteLink {
+                            cursor: pointer;
                             padding: 10px;
                             text-decoration: underline;
                             &:hover {
