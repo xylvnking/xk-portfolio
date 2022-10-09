@@ -84,7 +84,7 @@ export default function Projects() {
                             This app <strong>allows users to create accounts, upload songs, write revision notes, and invite others to do the same.</strong> When a user uploads a song they become an <em>admin</em> who can then grant other users either the admin or <em>access</em> role, with the latter only allowing read priviledges.
                         </p>
                         <p>
-                            Although my main focus long-term is front-end development, I'm still working as a freelance audio engineer while building that new branch of my career. <strong>This application is also to help fascilitate my audio work</strong> - streamlining the workflow of transfering file versions to clients and having them sending back revision notes, all while giving me a practical real-world opportunity to make great use of my front-end development skills.
+                            Although my main focus long-term is front-end development, I'm still working as a freelance audio engineer while building this new branch of my career. <strong>This application is also to help fascilitate my audio work</strong> - streamlining the workflow of transfering file versions to clients and having them sending back revision notes, all while giving me a practical real-world opportunity to make great use of my front-end development skills.
                         </p>
                     </section>
 
@@ -403,7 +403,62 @@ export default function Projects() {
                     </div>
             </div>
 
-            {/* <div id='(styles' */}
+            <div id={styles["tertiaryProjectsContainer"]}>
+                <section id={styles["tertiaryProjects"]}>
+                    <ul>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/xk-portfolio'>Portfolio v2 (this website)</a>
+                                <h2>Lo-fi austin poke irony copper mug gatekeep offal ugh, waistcoat narwhal prism.Drinking vinegar farm-to-table synth four loko tacos hexagon irony man braid bushwick venmo copper mug vinyl pickled mlkshk literally.</h2>
+                        </li>
+                        <li>
+                            
+                                <a target='_blank' href='https://github.com/xylvnking/xk-portfolio'>Portfolio v1</a>
+                                <h2>Drinking vinegar farm-to-table synth four loko tacos hexagon irony man braid bushwick venmo copper mug vinyl pickled mlkshk literally.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/xk-tensorflow-face-detection'>Tensorflow face detection</a>
+                                <h2>Drinking vinegar farm-to-table synth four loko tacos hexagon irony man braid bushwick venmo copper mug vinyl pickled mlkshk literally. Drinking vinegar farm-to-table synth four loko tacos hexagon irony man braid bushwick venmo copper mug vinyl pickled mlkshk literally.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/dashboardV1'>Audio collaboration platform v2</a>
+                                <h2>The second iteration of my main project. I learned a lot from the other times and structured my data in a much more sensible way. Ultimately it was still wrong, so I restarted it. The problem was that I was storing too much data in a single firestore document, meaning that updating any single field (especially nested arrays) required a lot of boilerplate-ish code to accomplish. I planned out the routing and pages/component structure better in this one, but again I improved on it a lot for the current iteration. The UI is also very bad, but I didn't bother with it much since it's what I do last and I realized I needed to restart from scratch anyways.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/xktransfer'>Audio collaboration platform v1</a>
+                                <h2>The first iteration of my main project. I didn't really know how to do this going into it, so this was really more of a learning experience than a deliberate attempt to make something worth showcasing. The biggest problem (which I didn't solve until v3) was that I was storing songs as user data, instead of as their own independent documents which then have permissions set to allow users to access them. The data structure was not good either, which was partially addressed in v2 but fixed entirely in v3. The UI was alright, but nowhere near v3.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/FCC-File-Metadata-Microservice'>File metadata microservice</a>
+                                <h2>From FreeCodeCamp's <em>Back End Development and APIs</em> certification course. Uses Express to receive a file and return metadata as JSON.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/FCC-Exercise-Tracker'>Exercise tracker</a>
+                                <h2>From FreeCodeCamp's <em>Back End Development and APIs</em> certification course. Uses Express to create users then receive and store information about exercises they log.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/FCC-URL-Shortener-Microservice'>URL shortener microservice</a>
+                                <h2>From FreeCodeCamp's <em>Back End Development and APIs</em> certification course. Uses Express to receive a URL, store it, and return a shortened version which can then be posted to server to receive back the full URL.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/FCC-Request-Header-Parser-Microservice'>Request header parser microservice</a>
+                                <h2>From FreeCodeCamp's <em>Back End Development and APIs</em> certification course. Uses Express to receive a request, parse the header for data, and return JSON.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/FCC-Timestamp-Microservice'>Timestamp microservice</a>
+                                <h2>From FreeCodeCamp's <em>Back End Development and APIs</em> certification course. Uses Express to receive a request and return a timestamp as JSON.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/CyberPokeAPI'><em>CyberPokeAPI</em> rest API</a>
+                                <h2>Unfinished. I was having a lot of fun with Midjourney and wanted to get cyberpunk versions of the original 151 pokemon and make an API similar to the popular pokemon api lots of new devs use for projects. I shelved the project because creating that much artwork with midjourney would have taken at least two weeks and there were better projects for me to build to showcase my skills. I'd love to make it in the future though.</h2>
+                        </li>
+                        <li>
+                                <a target='_blank' href='https://github.com/xylvnking/Firebase-Blog'>Firebase blog</a>
+                                {/* <p>Firebase blog</p> */}
+                                <h2>This was a learning experience. It was my first time using firebase and it worked! But I had no use for the project and wanted to create something more unique for my portfolio projects so I shelved it.</h2>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </>
     )
 }

@@ -389,6 +389,11 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                             color: $light-black;
                         }
                     }
+                    header {
+                        h2 {
+                            padding: 10px 0px 10px 0px;
+                        }
+                    }
                     .secondaryProjectTechLogos {
                         display: flex;
                         align-items: center;
@@ -411,6 +416,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         font-size: 14px;
                         color: $light-black;
                         padding: 10px;
+                        
                     }   
                     .screenshotImageWrapper {
                         padding: 10px;
@@ -469,6 +475,76 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     }
 
                 }
+            }
+        }
+        #tertiaryProjectsContainer {
+            max-width: 1000px;
+            margin: auto;
+            #tertiaryProjects {
+                ul {
+                    list-style: none;
+                    padding: 0px;
+                    li {
+                        
+                        padding: 10px 20px 10px 20px;
+                        // padding: 10px;
+                        // margin: 0px;
+                        // font-family: 'Poppins', sans-serif;
+                        // font-family: 'Courier New', Courier, monospace;
+                        // background-color: #c252e1;
+                        
+                            display: flex;
+                            // flex-direction: column;
+                            // justify-content: center;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 20px;
+                            border-bottom: .5px solid rgb(170, 170, 170);
+                            // background-color: #00a3ff;
+                            // width: 1000px;
+                            // display: grid;
+                            // wi
+                            // grid-template-columns: 200px 1fr;
+                            display: grid;
+                            grid-template-columns: 250px 1fr;
+                            a {
+                                flex-shrink: 0;
+                                font-weight: 300;
+                                font-size: 14px;
+                                margin: 0px;
+                                color: $blue-darker;
+                                text-decoration: underline 1.5px;
+                                text-decoration-color: #6ecbf5;
+                                cursor: pointer;
+                                &:hover {
+                                    color: $light-black;
+                                    text-decoration-color: $light-black;
+                                }
+                            }
+                            p {
+                                flex-shrink: 0;
+                                font-weight: 300;
+                                font-size: 14px;
+                                margin: 0px;
+                                color: $blue-darker;
+                                text-decoration: underline 1.5px;
+                                text-decoration-color: #6ecbf5;
+                                cursor: not-allowed;
+                            }
+                            h2 {
+                                margin: 0px;
+                                font-weight: 200;
+                                font-size: 12px;
+                                text-align: justify;
+                                // padding: 0px 20px 0px 20px;
+                                @media(max-width: 1000px) {
+                                    display: none;
+                                }
+                            }
+                        
+                    }
+                }
+                // background-color: #00a3ff;
             }
         }
     }
