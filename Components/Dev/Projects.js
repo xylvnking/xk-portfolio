@@ -12,6 +12,8 @@ import screenshot5 from '../../public/static/projects/ss5.png'
 import hookdemosSS from '../../public/static/projects/hookdemosscreenshot.png'
 import markdownEditorSS from '../../public/static/projects/markdowneditorss.png'
 import handdetectionSS from '../../public/static/projects/handdetectionss.png'
+import cultOfThreeSS from '../../public/static/projects/cultofthreess.png'
+import threeDeeEditorSS from '../../public/static/projects/threeeditorss.png'
 
 import reactLogo from '../../public/static/React-icon.svg.png'
 import firebaseLogo from '../../public/static/fblogo.webp'
@@ -164,19 +166,18 @@ export default function Projects() {
                     </>
                 </section>
 
-
-                <div id={styles['orbGif']}>
+                <div className={styles.decoGif} style={{backgroundColor: '#050505'}}>
                     <Image src={'https://media3.giphy.com/media/05dgux7TEBbY4VxAlb/giphy.gif?cid=ecf05e477f5c2d7c1601cf3f11b94c77054e6c65347220a4&rid=giphy.gif&ct=g'} objectFit='contain' layout='fixed' height={300} width={300} />
                 </div>
 
-
             </div>
+
+
             <div id={styles["secondaryProjectsContainer"]}>
                 <section id={styles["secondaryProjects"]}>
 
 
                     <div className={styles.secondaryProjectsGridColumn}>
-
 
 
                         <article className={styles.secondaryProject}>
@@ -204,6 +205,16 @@ export default function Projects() {
                             <div className={styles.screenshotImageWrapper}>
                                 <Image src={hookdemosSS} objectFit='contain' />
                             </div>
+                            <footer>
+                                <a>
+                                    <button>Visit the live site</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                                <a>
+                                    <button>View the source code on GitHub</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                            </footer>
                         </article>
 
 
@@ -217,7 +228,7 @@ export default function Projects() {
                                     <Image src={reactLogo} objectFit='contain' />
                                 </div>
                                 <div className={styles.nextImageWrapperTechLogo}>
-                                    <Image src={firebaseLogo} objectFit='contain' />
+                                    <Image src={firebaseLogo} objectFit='contain'  height={200}/>
                                 </div>
                                 <div className={styles.nextImageWrapperTechLogo}>
                                     <Image src={markdownLogo} objectFit='contain' />
@@ -232,6 +243,16 @@ export default function Projects() {
                             <div className={styles.screenshotImageWrapper}>
                                 <Image src={markdownEditorSS} objectFit='contain' />
                             </div>
+                            <footer>
+                                <a>
+                                    <button>Visit the live site</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                                <a>
+                                    <button>View the source code on GitHub</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                            </footer>
                         </article>
 
 
@@ -276,6 +297,16 @@ export default function Projects() {
                             <div className={styles.screenshotImageWrapper}>
                                 <Image src={handdetectionSS} objectFit='contain' />
                             </div>
+                            <footer>
+                                <a>
+                                    <button>Visit the live site</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                                <a>
+                                    <button>View the source code on GitHub</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                            </footer>
                             {/* https://xk-tensorflow-threejs-hand-detection.vercel.app/ */}
                         </article>
 
@@ -285,7 +316,7 @@ export default function Projects() {
                         <article className={styles.secondaryProject}>
                             <header className={styles.secondaryProjectTitles}>
                                 <h1>Audio-Only Game Engine</h1>
-                                <h2>Proof Of Concept for a larger future passion project</h2>
+                                <h2>Proof of concept for a larger future passion project</h2>
                             </header>
                             <div className={styles.secondaryProjectTechLogos}>
                                 <div className={styles.nextImageWrapperTechLogo}>
@@ -305,6 +336,19 @@ export default function Projects() {
                                 <p>Shoreditch pug truffaut wolf tilde kickstarter. Echo park raclette farm-to-table hella cliche. Vinyl master cleanse tacos authentic deep v try-hard. Hoodie DIY migas hella freegan offal paleo unicorn.</p>
 
                             </div>
+                            <div className={styles.screenshotImageWrapper}>
+                                <Image src={cultOfThreeSS} objectFit='contain' />
+                            </div>
+                            <footer>
+                                <a>
+                                    <button>Visit the live site</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                                <a>
+                                    <button>View the source code on GitHub</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                            </footer>
                         </article>
 
 
@@ -327,6 +371,19 @@ export default function Projects() {
                             <div className={styles.secondaryProjectDescription}>
                                 <p>Umami narwhal franzen, affogato selvage green juice tumeric direct trade semiotics aesthetic live-edge. Slow-carb raclette seitan single-origin coffee, tilde messenger bag dreamcatcher affogato hella photo booth.</p>
                             </div>
+                            <div className={styles.screenshotImageWrapper}>
+                                <Image src={threeDeeEditorSS} objectFit='contain' />
+                            </div>
+                            <footer>
+                                <a>
+                                    <button>Visit the live site</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                                <a>
+                                    <button>View the source code on GitHub</button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"/></svg>
+                                </a>
+                            </footer>
                         </article>
 
 
@@ -335,11 +392,18 @@ export default function Projects() {
 
 
 
-
-
+                    {/* <div id={styles['shapeGif']}> */}
+                    
 
                 </section>
+                    {/* <div className={styles.decoGif} style={{backgroundColor: '#F9F9F9'}}> */}
+                    <div className={styles.decoGif} style={{backgroundColor: '#000000'}}>
+                        {/* <Image src={'https://media0.giphy.com/media/IwSG1QKOwDjQk/giphy.gif?cid=ecf05e47abb600e25495e0e25cfe3bb0fd1b331624bd9c24&rid=giphy.gif&ct=g'} objectFit='contain' layout='fixed' height={300} width={300} /> */}
+                        <Image src={'https://media1.giphy.com/media/uGz9OvQL8eSSu47pCi/giphy.gif?cid=ecf05e47922ba08e65e3964885ab185da0b440528182a9ba&rid=giphy.gif&ct=g'} objectFit='contain' layout='fixed' height={300} width={300} />
+                    </div>
             </div>
+
+            {/* <div id='(styles' */}
         </>
     )
 }

@@ -14,7 +14,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 #container {
     h1, h2, h3 { margin: 0px;}
     font-family: 'Poppins', sans-serif;
-    #orbGif {
+    .decoGif {
         height: 400px;
         width: 100%;
         background-color: #050505;
@@ -182,18 +182,20 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #projects {
         #mainProjectContainer {
-            max-width: 1500px;
+            // max-width: 1500px;
             margin: auto;
             @media(min-width: 1500px) {
-                border-radius: 20px;
+                // border-radius: 20px;
             }
             @media(min-width: 500px) {
                 padding: 20px;
                 background-color: $black;
                 background: rgb(30,30,30);
                 background: linear-gradient(180deg, rgba(30,30,30,1) 0%, rgba(5,5,5,1) 78%);
+                
             }
             #mainProject {
+                max-width: 1500px;
                 background-color: white;
                 margin: auto;
                 padding-top: 20px;
@@ -232,7 +234,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     gap: 50px;
                     @media (min-width: 700px) {
                         flex-direction: row;
-                        width: 100%;
+                        width: 80%;
                         gap: 10px;
                     }
                     img {
@@ -263,6 +265,13 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     .nextImageWrapperTechLogo {
                         width: 60px;
                         margin-bottom: 0px;
+                        @media(min-width: 700px) {
+                            width: 80px;
+
+                        }
+                        // @media(max-width: 300px) {
+                        //     width: 25px;
+                        // }
                     }
                     p {
                         margin: 0px;
@@ -334,15 +343,22 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         #secondaryProjectsContainer {
             // height: 100vh;
             @media(min-width: 500px) {
-                background: rgb(5,5,5);
-                background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(30,30,30,1) 28%);
+                // background: rgb(5,5,5);
+                // background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(30,30,30,1) 28%);
                 // background: rgb(5,5,5);
                 // background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(30,30,30,1) 48%);
+                // background-color: $black;
+                background: rgb(5,5,5);
+                background: linear-gradient(180deg, rgba(5,5,5,1) 14%, rgba(0,0,0,1) 81%);
+                // background: rgb(30,30,30);
+                // background: linear-gradient(180deg, rgba(30,30,30,1) 0%, rgba(5,5,5,1) 78%);
             }
             color: $black;
             #secondaryProjects {
                 display: grid;
                 grid-template-columns: 1fr;
+                max-width: 1500px;
+                margin: auto;
                 @media(min-width: 700px) {
                     grid-template-columns: 1fr 1fr;
                 }
@@ -362,8 +378,10 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     margin: 10px;
                     .secondaryProjectTitles {
                         text-align: center;
+                        padding-top: 20px;
                         h1 {
                             font-size: 32px;
+                            // padding: 7px;
                         }
                         h2 {
                             font-size: 16px;
@@ -375,18 +393,81 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         display: flex;
                         align-items: center;
                         justify-content: space-around;
+                        
+                        margin-top: 20px;
                         .nextImageWrapperTechLogo {
-                            width: 75px;
+                            // display: ;
+                            width: 50px;
+                            @media(min-width: 1000px) {
+                                width: 75px;
+                            }
+                            // @media(max-width: 300px) {
+                            //     width: 25px;
+                            // }
                         }
                     }
                     .secondaryProjectDescription {
                         text-align: justify;
                         font-size: 14px;
                         color: $light-black;
+                        padding: 10px;
                     }   
                     .screenshotImageWrapper {
-                        
+                        padding: 10px;
+                        // @media(min-width: 700px) {
+                        //     margin: auto;
+                        //     width: 90%;
+                        // }
                     }
+
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                        @media(min-width: 900px) {
+                            justify-content: space-around;
+                            align-items: center;
+                            flex-direction: row;
+                            // width: 75px;
+                        }
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &:hover {
+                                    fill: $blue-darker;
+                                }
+                            
+                            cursor: pointer;
+                            svg {
+                                fill: $light-black;
+                                // &:hover {
+                                //     fill: $blue-darker;
+                                // }
+                            }
+                            
+                            button {
+                                cursor: pointer;
+                                font-family: 'Poppins', sans-serif;
+                                background-color: white;
+                                border: none;
+                                border-radius: 10px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                color: $light-black;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                // &:hover {
+                                //     color: $blue-darker;
+                                // }
+                            }
+                            &:hover {
+                                svg {fill: $blue-darker;}
+                                button { color: $blue-darker;}
+                                
+                            }
+                        }
+                    }
+
                 }
             }
         }
