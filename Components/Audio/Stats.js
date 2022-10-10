@@ -31,7 +31,7 @@ import exclaimLogo from '../../public/static/audiopresslogos/exclaim.png'
 export default function Stats() {
     return (
         <div id={styles["statsPressLogosContainer"]}>
-                {/* <div id={styles["stats"]}>
+                <div id={styles["stats"]}>
                     <div>
                         <h1>60'000'000+</h1>
                         <h2>streams</h2>
@@ -48,7 +48,7 @@ export default function Stats() {
                         <h1>25000+</h1>
                         <h2>hours of experience</h2>
                     </div>
-                </div> */}
+                </div>
 
                 <div id={styles["pressLogosContainer"]}>
                     <div className={styles.pressLogoWrapper}>

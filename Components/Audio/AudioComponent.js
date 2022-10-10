@@ -8,6 +8,8 @@ import Hero from './Hero'
 import Stats from './Stats'
 import Testimonials from './Testimonials'
 import About from './About'
+import Playlists from './Playlists'
+import Working from './Working'
 
 
 
@@ -28,6 +30,12 @@ export default function AudioComponent() {
             </section>
             <section id={styles["about"]}>
                 <About />
+            </section>
+            <section id={styles["playlists"]}>
+                <Playlists />
+            </section>
+            <section id={styles["working"]}>
+                <Working />
             </section>
             <section id={styles["testimonials"]}>
                 <Testimonials />
