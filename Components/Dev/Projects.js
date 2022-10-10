@@ -271,6 +271,9 @@ export default function Projects() {
                                 <div className={styles.nextImageWrapperTechLogo}>
                                     <Image src={substanceLogo} objectFit='contain' />
                                 </div>
+                                <div className={styles.nextImageWrapperTechLogo}>
+                                    <Image src={blenderLogo} objectFit='contain' />
+                                </div>
                             </div>
                             <div className={styles.secondaryProjectDescription}>
                                 <p>Umami narwhal franzen, affogato selvage green juice tumeric direct trade semiotics aesthetic live-edge. Slow-carb raclette seitan single-origin coffee, tilde messenger bag dreamcatcher affogato hella photo booth.</p>
