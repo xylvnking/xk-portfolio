@@ -5,6 +5,7 @@ import Image from 'next/image'
 import styles from './Audio.module.scss'
 import Hero from './Hero'
 import Stats from './Stats'
+import Testimonials from './Testimonials'
 
 
 
@@ -22,6 +23,9 @@ export default function AudioComponent() {
             </section>
             <section id={styles["stats"]}>
                 <Stats />
+            </section>
+            <section id={styles["testimonials"]}>
+                <Testimonials />
             </section>
         </main>
     </div>

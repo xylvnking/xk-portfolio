@@ -37,8 +37,10 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 h3 {
                     margin: 0px;
                     padding: 0px;
+                    color: $black;
                 }
                 height: 100vh;
+                // height: 75vh;
                 font-size: 5vw;
                 display: flex;
                 flex-direction: column;
@@ -96,7 +98,9 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 // max-width: 50ch;
                 max-width: 2000px;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                
             }
+            @media(min-width: 2000px) { border-radius: 20px; }
             background-color: $black;
             padding: 20px;
             // border-radius: 10px;
@@ -104,18 +108,136 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             margin: auto;
             background-color: $black;
 
+            
+            // padding: 10px;
+
             // image credit: https://giphy.com/xponentialdesign
-            background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
-            background-size: cover;
-            background-position: center;   
-            // filter: hue-rotate(-30deg);
-            filter: hue-rotate(-30deg) brightness(130%);
-            // background-color: #6ecbf5;
+            // background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
+            // background-size: cover;
+            // background-position: center;   
+            // // filter: hue-rotate(-30deg);
+            // filter: hue-rotate(-30deg) brightness(130%);
+            
+            
+            // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
+            // background-size: cover;
+            // background-position: center;   
+
+            background-color: $black;
             // filter: brightness(100%);
 
             .pressLogoWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 // filter: brightness(200%);
             }
+        }
+    }
+    #testimonials {
+        #testimonialsContainer {
+            // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
+            background-image: url('/static/backgrounds/blackwhitegold.png');
+            // background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
+            // background-size: cover;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-position: center;   
+            background-color: $black;
+            padding: 10px;
+
+            #testimonialsGridColumns {
+                // margin: 10px;
+                @media(min-width: 700px) {
+                    grid-template-columns: 1fr 1fr;
+                    display: grid;
+                    @media(min-width:1000px) {
+                        grid-template-columns: 1fr 1fr 1fr;
+
+                    }
+                }
+                // text-align: center;
+                .testimonialsColumn {
+                    // ma
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    #skipWaiters { background-image: url('/static/testimonials/SkipWaitersBackground.jpg'); }
+                    #milly { background-image: url('/static/testimonials/millyback.jpg'); background-position: right; }
+                    #riah { background-image: url('/static/testimonials/riahback.jpg');}
+                    .testimonialBackgroundUtility {
+                        background-size: cover;
+                        background-position: center; 
+                        
+                    }
+                    .testimonial {
+                        background-color: white;
+                        // min
+                        // col
+                        color: $black;
+                        color: white;
+                        // max-width: 400px;
+                        padding: 20px;
+                        
+                        margin: 10px;
+                        border-radius: 10px;
+                        box-shadow: $subtle-shadow;
+                        @media(min-width: 900px) {
+                            margin: 10px;
+                            
+                            
+                            
+                        }
+                        .testimonialPhotoWrapper {
+                            // height: 100vh;
+                            // padding: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            // margin: 20px;
+                            // width: 50%;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            max-width: 300px;
+                            margin: auto;
+                            border: 5px white solid;
+                            
+                        }
+                        p {
+                            // font-size: 20px;
+                            // background-color: #0000004e;
+                            padding: 10px;
+                            border-radius: 10px;
+
+                            text-align: justify;
+                            max-width: 75ch;
+                            margin: auto;
+                            margin-top: 20px;
+                            font-style: italic;
+                            // backdrop-filter: blur(20px);
+                            // backdrop-filter: brightness(0%);
+                        }
+                        h2 {
+                            text-align: center;
+                        }
+                        h3 {
+                            text-align: center;
+                            font-weight: 300;
+                            font-size: 14px;
+                            font-style: italic;
+                            a {
+                                text-decoration: underline;
+                                &:hover {
+                                    color: $blue-darker;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // background-color: #0068D7;
         }
     }
 }
