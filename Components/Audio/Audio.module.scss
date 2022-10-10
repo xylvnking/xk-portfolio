@@ -24,6 +24,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 #container {
     // background-color: #00a3ff;
     font-family: 'Poppins', sans-serif;
+    cursor: default;
     #hero {
         // width: ;
         #heroContainer {
@@ -104,7 +105,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             background-color: $black;
             padding: 20px;
             // border-radius: 10px;
-            box-shadow: $subtle-shadow;
+            // box-shadow: $subtle-shadow;
             margin: auto;
             background-color: $black;
 
@@ -112,14 +113,18 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             // padding: 10px;
 
             // image credit: https://giphy.com/xponentialdesign
+
+
             // background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
-            // background-size: cover;
-            // background-position: center;   
-            // // filter: hue-rotate(-30deg);
+            background-size: cover;
+            background-position: center;   
+            // filter: hue-rotate(-30deg);
             // filter: hue-rotate(-30deg) brightness(130%);
             
-            
+            background-attachment: fixed;
+
             // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
+            background-image: url('/static/backgrounds/papersmall.jpg');
             // background-size: cover;
             // background-position: center;   
 
@@ -130,21 +135,125 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
                 // filter: brightness(200%);
+            }
+        }
+    }
+    #about {
+        background-image: url('/static/backgrounds/topography.png');
+        // background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
+        // background-size: cover;
+
+        // background-position: right;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        // border-bottom: 5px white solid;
+        // z-index: 999;
+        position: relative;
+        // background-attachment: fixed;
+
+        // border-radius: 10px;
+        #aboutContainer {
+            // margin: auto;
+            margin-left: auto;
+            
+            text-align: justify;
+            min-height: 50vh;
+            // dis
+            // display: flex;
+            // justify-content: center;
+            // align-items: flex-end;
+            // background-color: $black;
+            @media(min-width: 800px) {
+                display: grid;
+                grid-template-columns: 300px 1fr;
+                // display: none;
+            }
+            .profilePhotoWrapper {
+                // height: 200px;
+                // margin-right: auto;
+                // width: 200px;
+                // align-self: flex-end;
+                // align-self: flex-start;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                // min-height: 200px;
+                // margin-top: auto;
+                @media(max-width: 800px) {
+                    display: none;
+                }
+            }
+            .aboutText {
+                // display: none;
+                max-width: 75ch;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // color: $black;
+                // color: white;
+                
+                
+                // padding: 20px 20px 20px 20px;
+                // margin: 20px;
+                margin: 0px;
+                padding: 20px;
+                margin: auto;
+                
+                h2 {
+                    // border-left: 5px solid $light-black;
+                    // padding-left: 20px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    // margin: 0px;
+                    // padding: 0px;
+                    // position: relative;
+                    span {
+                        font-weight: 600;
+                        text-decoration: underline;
+                        text-decoration-color: #5f5f5f;
+                        cursor: pointer;
+                        
+                        &:hover {
+                            color: $blue-darker;
+                            text-decoration-color: $blue-darker;
+                        }
+                        // text-decoration-thickness: 1.5px ;
+                        // text-decoration-line: 2px;
+                    }
+                }
+                a {
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-decoration: underline;
+                    text-decoration-color: #5f5f5f;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        color: $blue-darker;
+                        text-decoration-color: $blue-darker;
+                    }
+                }
             }
         }
     }
     #testimonials {
         #testimonialsContainer {
             // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
-            background-image: url('/static/backgrounds/blackwhitegold.png');
+            // background-image: url('/static/backgrounds/blackwhitegold.png');
+            background-image: url('/static/backgrounds/whitegoldsmall.png');
+            // background-image: url('/static/backgrounds/topography.png');
             // background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
-            // background-size: cover;
-            background-repeat: repeat-x;
-            background-repeat: repeat-y;
-            background-position: center;   
+            background-size: cover;
+            // background-repeat: repeat-x;
+            // background-repeat: repeat-y;
+            // background-position: center;
+            background-attachment: fixed;
+            
             background-color: $black;
+            background-color: white;
             padding: 10px;
+            padding-top: 50px;
 
             #testimonialsGridColumns {
                 // margin: 10px;
@@ -162,9 +271,9 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    #skipWaiters { background-image: url('/static/testimonials/SkipWaitersBackground.jpg'); }
+                    #skipWaiters { background-image: url('/static/testimonials/SkipWaitersBackgroundsmall.jpg'); }
                     #milly { background-image: url('/static/testimonials/millyback.jpg'); background-position: right; }
-                    #riah { background-image: url('/static/testimonials/riahback.jpg');}
+                    #riah { background-image: url('/static/testimonials/riahback.jpg'); }
                     .testimonialBackgroundUtility {
                         background-size: cover;
                         background-position: center; 
@@ -172,15 +281,18 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     }
                     .testimonial {
                         background-color: white;
+                        // background-color: $black;
                         // min
                         // col
                         color: $black;
                         color: white;
                         // max-width: 400px;
                         padding: 20px;
-                        
+                        cursor: default;
                         margin: 10px;
                         border-radius: 10px;
+                        // border: solid rgb(0, 0, 0) 2px;
+                        border: solid $black 2px;
                         box-shadow: $subtle-shadow;
                         @media(min-width: 900px) {
                             margin: 10px;
@@ -201,6 +313,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                             max-width: 300px;
                             margin: auto;
                             border: 5px white solid;
+                            box-shadow: $subtle-shadow;
                             
                         }
                         p {

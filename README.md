@@ -17,3 +17,6 @@ using object fit contain makes it fill the container, and then if any border rad
 setting the height is a bit weird too. it's not pixels, and if I set the with of the wrapper to something specific like 50px, the height parameter then acts as a scale almost.
 
 the firebase logo is always too tallso I have to shrink it, and i did that in this project using a height of 200, where 300 is very close to the default. I don't need to deep dive it right now but keep that in mind especially if you have trouble. set the width on the container, then height directly on the image style.
+
+
+[next js image props](https://refine.dev/blog/using-next-image/)

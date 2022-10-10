@@ -26,6 +26,7 @@ import thissongslapsLogo from '../../public/static/audiopresslogos/thissongslaps
 import suicidesheepLogo from '../../public/static/audiopresslogos/suicidesheep.png'
 import uberflipLogo from '../../public/static/audiopresslogos/uberflip.png'
 import viceLogo from '../../public/static/audiopresslogos/vice.png'
+import exclaimLogo from '../../public/static/audiopresslogos/exclaim.png'
 
 export default function Stats() {
     return (
@@ -51,76 +52,79 @@ export default function Stats() {
 
                 <div id={styles["pressLogosContainer"]}>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={muchLogo} objectFit='contain' />
+                        <Image src={muchLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={viceLogo} objectFit='contain' />
+                        <Image src={viceLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={spotifyLogo} objectFit='contain' />
+                        <Image src={spotifyLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={faderLogo} objectFit='contain' />
+                        <Image src={faderLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={dynmkLogo} objectFit='contain' />
+                        <Image src={dynmkLogo} objectFit='contain' quality={10}/>
+                    </div>
+                    
+                    <div className={styles.pressLogoWrapper}>
+                        <Image src={exclaimLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={earmilkLogo} objectFit='contain' />
+                        <Image src={mtvLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={faderLogo} objectFit='contain' />
+                        <Image src={appleMusicLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={mtvLogo} objectFit='contain' />
+                        <Image src={shazamLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={appleMusicLogo} objectFit='contain' />
+                        <Image src={suicidesheepLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={shazamLogo} objectFit='contain' />
+                        <Image src={nestLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={thissongslapsLogo} objectFit='contain' />
+                        <Image src={paperbagLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={suicidesheepLogo} objectFit='contain' />
+                        <Image src={hillydillyLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={nestLogo} objectFit='contain' />
+                        <Image src={cbcLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={paperbagLogo} objectFit='contain' />
+                        <Image src={sofarLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={hillydillyLogo} objectFit='contain' />
+                        <Image src={uberflipLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={cbcLogo} objectFit='contain' />
+                        <Image src={publicspaceLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={sofarLogo} objectFit='contain' />
+                        <Image src={earmilkLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={uberflipLogo} objectFit='contain' />
+                        <Image src={bullettLogo} objectFit='contain' quality={10}/>
+                    </div>
+                    
+                    <div className={styles.pressLogoWrapper}>
+                        <Image src={conexLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={publicspaceLogo} objectFit='contain' />
+                        <Image src={thissongslapsLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={bullettLogo} objectFit='contain' />
+                        <Image src={hiphopcanadaLogo} objectFit='contain' quality={10}/>
+                    </div>
+                    
+                    <div className={styles.pressLogoWrapper}>
+                        <Image src={kaltbultLogo} objectFit='contain' quality={10}/>
                     </div>
                     <div className={styles.pressLogoWrapper}>
-                        <Image src={conexLogo} objectFit='contain' />
-                    </div>
-                    <div className={styles.pressLogoWrapper}>
-                        <Image src={hiphopcanadaLogo} objectFit='contain' />
-                    </div>
-                    <div className={styles.pressLogoWrapper}>
-                        <Image src={kaltbultLogo} objectFit='contain' />
-                    </div>
-                    <div className={styles.pressLogoWrapper}>
-                        <Image src={ridethetempoLogo} objectFit='contain' />
+                        <Image src={ridethetempoLogo} objectFit='contain' quality={10}/>
                     </div>
                 </div>
             

@@ -6,7 +6,8 @@ import Image from 'next/image'
 import dummyProfilePhoto from '../../public/static/dummyprofile.jpeg'
 // import dummyProfilePhoto from '../../public/static/dummyprofile.jpeg'
 
-import skipWaitersPhoto from '../../public/static/testimonials/SkipWaitersPressPhoto.jpg'
+// import skipWaitersPhoto from '../../public/static/testimonials/SkipWaitersPressPhoto.jpg'
+import skipWaitersPhoto from '../../public/static/testimonials/SkipWaitersPressPhotosmall.jpg'
 import millyPhoto from '../../public/static/testimonials/millyphoto.jpg'
 import riahPhoto from '../../public/static/testimonials/riahphoto.jpg'
 
