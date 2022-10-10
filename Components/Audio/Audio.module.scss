@@ -314,32 +314,59 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #working {
         #workingContainer {
-            // min-height: 50vh;
-            display: grid;
-            grid-template-columns: 1fr;
-            padding: 20px;
-            .arrowContainer {
-                display: none;
-                align-items: center;
-                justify-content: center;
-            }
-            @media(min-width: 400px) {
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            .grid {
+            
+                // min-height: 50vh;
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: 20px;
                 .arrowContainer {
-                    display: flex;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    
                 }
-
-            }
-            .step {
-                max-width: 400px;
-                // width: ;
-                margin: auto;
-                // display: flex;
-                text-align: center;
-                
-                .iconWrapper {
-                    width: 300px;
+                @media(min-width: 700px) {
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    // padding: 50px 200px 50px 200px;
+                    padding: 20px;
+                    .arrowContainer {
+                        display: flex;
+                    }
+    
+                }
+                max-width: 1500px;
+                margin-left: auto;
+                margin-right: auto;
+                .step {
                     margin: auto;
+                    text-align: center;
+                    h1 {
+                        // font-size: 20px;
+                        @media(max-width: 1000px) {
+                            font-size: 100%;
+                            
+                        }
+                    }
+                    
+                    .iconWrapper {
+                        width: 300px;
+                        margin: auto;
+                        // width: 100%;
+                        @media(max-width: 1000px) {
+                            width: 100%;
+                            
+                        }
+                    }
+                    //  @media(min-width: 700px) {
+                    //     max-width: 200px;
+                    //     .iconWrapper {
+                    //         width: 100px;
+                    //         margin: auto;
+                    //     }
+        
+                    // }
                 }
             }
             // background-image: url('/static/backgrounds/topography.png');
