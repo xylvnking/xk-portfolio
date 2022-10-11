@@ -799,7 +799,7 @@ $max-width: 1500px;
             #testimonialsGridColumns {
                 // margin: 10px;
                 @media(min-width: 700px) {
-                    grid-template-columns: 1fr 1fr;
+                    // grid-template-columns: 1fr 1fr;
                     display: grid;
                     @media(min-width:1000px) {
                         grid-template-columns: 1fr 1fr 1fr;
