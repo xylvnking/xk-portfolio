@@ -14,6 +14,7 @@ import examinationUndraw from '../../public/static/customicons/examinationUndraw
 import collectingUndraw from '../../public/static/customicons/collectingUndraw.png'
 // import natureUndraw from '../../public/static/customicons/natureUndraw.png'
 import natureUndraw from '../../public/static/customicons/amongnatureundraw.png'
+import launchUndraw from '../../public/static/customicons/launchundraw.png'
 
 export default function Working() {
   return (
@@ -24,7 +25,7 @@ export default function Working() {
                     {/* <Image src={contactBlue} objectFit='contain' /> */}
                     <Image src={contactPurple} objectFit='contain' />
                 </div>
-                <h1><span className={styles.purpleText}>Contact me</span> to talk about your music, budget, and timeline</h1>
+                <h1><span className={styles.purpleText}><span className={styles.underline}>Contact me</span></span> to talk about your music, budget, and timeline</h1>
             </div>
 
             <div className={styles.arrowContainer}>
@@ -64,9 +65,9 @@ export default function Working() {
             <div className={styles.step}>
                 <div className={styles.iconWrapper}>
                     {/* <Image src={contactBlue} objectFit='contain' /> */}
-                    <Image src={contactPurple} objectFit='contain' />
+                    <Image src={launchUndraw} objectFit='contain' />
                 </div>
-                <h1>Release your song and stay in touch to <span className={styles.purpleText}>plan the next!</span></h1>
+                <h1>Release your song, and <span className={styles.purpleText}>plan the next!</span></h1>
             </div>
             <div className={styles.arrowContainer}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m22.35 38.95-13.9-13.9q-.25-.25-.35-.5Q8 24.3 8 24q0-.3.1-.55.1-.25.35-.5L22.4 9q.4-.4 1-.4t1.05.45q.45.45.45 1.05 0 .6-.45 1.05L13.1 22.5h24.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425H13.1l11.4 11.4q.4.4.4 1t-.45 1.05q-.45.45-1.05.45-.6 0-1.05-.45Z"/></svg>
@@ -76,7 +77,7 @@ export default function Working() {
                     <Image src={collectingUndraw} objectFit='contain' />
                 </div>
                 {/* files */}
-                <h1><span className={styles.purpleText}>Receive all deliverables</span> after you approve the final master.</h1>
+                <h1><span className={styles.purpleText}>Receive all deliverables</span> after you approve the final master</h1>
             </div>
             <div className={styles.arrowContainer}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m22.35 38.95-13.9-13.9q-.25-.25-.35-.5Q8 24.3 8 24q0-.3.1-.55.1-.25.35-.5L22.4 9q.4-.4 1-.4t1.05.45q.45.45.45 1.05 0 .6-.45 1.05L13.1 22.5h24.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425H13.1l11.4 11.4q.4.4.4 1t-.45 1.05q-.45.45-1.05.45-.6 0-1.05-.45Z"/></svg>
@@ -86,7 +87,7 @@ export default function Working() {
                     {/* <Image src={contactBlue} objectFit='contain' /> */}
                     <Image src={examinationUndraw} objectFit='contain' />
                 </div>
-                <h1><span className={styles.purpleText}>Download the mix</span> and mark any neccesary revision notes</h1>
+                <h1><span className={styles.purpleText}>Download the mix</span> and mark any revision notes</h1>
             </div>
            
         </div>

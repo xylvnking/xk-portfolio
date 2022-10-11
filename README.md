@@ -20,3 +20,4 @@ the firebase logo is always too tallso I have to shrink it, and i did that in th
 
 
 [next js image props](https://refine.dev/blog/using-next-image/)
+[convert mov to gif](https://www.adobe.com/express/feature/video/convert/mov-to-gif)

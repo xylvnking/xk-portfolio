@@ -10,6 +10,7 @@ import Testimonials from './Testimonials'
 import About from './About'
 import Playlists from './Playlists'
 import Working from './Working'
+import Contact from './Contact'
 
 
 
@@ -36,6 +37,9 @@ export default function AudioComponent() {
             </section>
             <section id={styles["working"]}>
                 <Working />
+            </section>
+            <section id={styles["contact"]}>
+                <Contact />
             </section>
             <section id={styles["testimonials"]}>
                 <Testimonials />
