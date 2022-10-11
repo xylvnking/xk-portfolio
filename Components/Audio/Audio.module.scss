@@ -7,6 +7,7 @@ $blue: #6ecbf5;
 $blue-darker: #00a3ff;
 $green: #00c735;
 $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 .blueText { color: $blue-darker}
 .greenText { color: $green; }
@@ -78,11 +79,14 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             @media(max-width: 700px) {
                 display: none;
             }
+
         }
             
         #statsPressLogosContainer {
+            // box-shadow: $card-shadow;
+            
             position: relative;
-            z-index: 2;
+            z-index: 3;
             max-width: 2000px;
             margin: auto;
             #statsOnlyContainer {
@@ -95,6 +99,8 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
                     // margin-top: -800px;
                     margin-top: -60%;
+                    // box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+                    // box-shadow:$card-shadow;
                 }
 
                 background-color: white;
@@ -155,15 +161,23 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     // max-width: 50ch;
                     max-width: 2000px;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                    
                 }
                 @media(max-width: 700px) {
                     // position: fixed;
                     // display: none;
                     background-color: $black;
                     // height: 0px;
-    
+                    
                 }
+                @media(min-width: 1500px) {
+                    // position: fixed;
+                    // display: none;
+                    background-color: $black;
+                    // height: 0px;
+                    
+                }
+                // box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+                // box-shadow: $card-shadow;
                 // @media(min-width: 2000px) { border-radius: 20px; }
                 // background-color: $black;
                 padding: 20px;
@@ -222,7 +236,11 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         // background-size: cover;
 
         // background-position: right;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        // box-shadow: $card-shadow;
+        // box-shadow: $card-shadow;
+        // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        // box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
         // border-bottom: 5px white solid;
         // z-index: 999;
         position: relative;
@@ -285,6 +303,11 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     // border-left: 5px solid $light-black;
                     // padding-left: 20px;
                     font-size: 20px;
+
+                    // font-size: 24px;
+
+
+
                     font-weight: 500;
                     // margin: 0px;
                     // padding: 0px;
@@ -348,12 +371,16 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             }
             padding: 20px;
             gap: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+            // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
             
             // display: flex;
             // align-items: center;
             // justify-content: center;
             // gap: 50px;
             // margin: auto;
+            // box-shadow: $card-shadow;
+            // box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
             .playlistIconWrapper {
                 // align-items: center;
                 justify-self: center;
@@ -400,6 +427,10 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         position: relative;
         z-index: 2;
         #workingContainer {
+            z-index: 2;
+            // box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            
+            // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
             .underline { 
                 text-decoration: underline; 
                 cursor: pointer; 
@@ -438,6 +469,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         display: flex;
                     }
                     background-image: url('/static/backgrounds/topography.png');
+                    box-shadow: $card-shadow;
     
                 }
                 // max-width: 1500px;
@@ -462,7 +494,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         // border: 2px #7e59c787 solid;
                         border: 2px #7e59c787 solid;
                         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-                        // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
                         
                         border-radius: 10px;
 
@@ -714,6 +746,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         
                     }
                     .testimonial {
+
                         background-color: white;
                         // background-color: $black;
                         // min
@@ -727,7 +760,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         border-radius: 10px;
                         // border: solid rgb(0, 0, 0) 2px;
                         border: solid $black 2px;
-                        box-shadow: $subtle-shadow;
+                        box-shadow: $card-shadow;
                         @media(min-width: 900px) {
                             margin: 10px;
                             
@@ -747,7 +780,8 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                             max-width: 300px;
                             margin: auto;
                             border: 5px white solid;
-                            box-shadow: $subtle-shadow;
+                            // box-shadow: $subtle-shadow;
+                            box-shadow: $card-shadow;
                             
                         }
                         p {
