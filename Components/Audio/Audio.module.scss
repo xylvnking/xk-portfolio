@@ -540,7 +540,6 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         justify-content: center;
                         align-items: center;
                         gap: 10px;
-                        cursor: pointer;
                         @media(min-width: 700px) {
                             justify-content: flex-start;                    
                         }
@@ -550,6 +549,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                             margin-bottom: 5px;
                         }
                         .underline {
+                            cursor: pointer;
                             color: $purple;
                             &:hover {
                                 color: $blue-darker;

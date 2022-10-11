@@ -6,7 +6,7 @@ import pp3nobackPhoto from '../../public/static/profilephotos/pp3noback.png'
 
 import styles from './Audio.module.scss'
 
-export default function About() {
+export default function About(props) {
   return (
     <div id={styles["aboutContainer"]}>
         <div className={styles.profilePhotoWrapper}>
@@ -21,7 +21,7 @@ export default function About() {
             <h2>After gradutating from college in London I moved to Toronto, where my primary focus has been mixing rap, rnb, electronic, and indie music.</h2>
             <h2>I work remotely, which means I don't run a public studio and book sessions. You make the music, and I take your files and guarantee it will compete with the majors, at a low cost.</h2>
             {/* <h2><span>Let me know when you're ready to work.</span></h2> */}
-            <a>Let me know when you're ready to work.</a>
+            <a target='_blank' href='https://www.instagram.com/xylvnking/'>Let me know when you're ready to work.</a>
             {/* <h2>Working the way I do allows me to keep costs as low as possible, because I can keep my schedule very flexible - which also allows for me to handle rush jobs and personal issues.</h2> */}
 
             {/* <h2>From making beats on an MPC500 in my friend's basement in highschool </h2> */}
