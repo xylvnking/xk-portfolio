@@ -13,7 +13,8 @@ export default function Home() {
         <link rel="icon" href="favicon.ico?v=1.1"/>
         <meta
           property="og:image"
-          content={imageShare}
+          // content={imageShare}
+          content={'https://mj-gallery.com/d27fc3d5-0594-486c-995a-16223091ce83/grid_0.png'}
         />
       </Head>
 
