@@ -12,7 +12,7 @@ import githubIconBlack from '../../public/static/githubblackicon.png'
 import githubText from '../../public/static/githubText.png'
 import githubTextBlack from '../../public/static/githubblacktext.png'
 
-
+// import ppgif from '../../public/static/profilephotos/lilgif.gif'
 
 import reactLogo from '../../public/static/React-icon.svg.png'
 import firebaseLogo from '../../public/static/fblogo.webp'
@@ -31,9 +31,9 @@ import photoshoplogo from '../../public/static/photoshop.png'
 export default function Hero() {
   return (
       <>
-        <div id={styles["profilePhotoContainer"]}>
+        {/* <div id={styles["profilePhotoContainer"]}>
             <Image src={pp} objectFit='contain' style={{ zIndex: 2}}/>            
-        </div>
+        </div> */}
         <h1>Dylan King</h1>
         <h2>Front-End Developer</h2>
         <div id={styles["techLogos"]}>

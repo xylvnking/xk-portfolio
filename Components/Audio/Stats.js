@@ -55,7 +55,7 @@ export default function Stats() {
                     </div>
                     <div>
                         <h1>25000+</h1>
-                        <h2>hours of experience</h2>
+                        <h2 style={{marginBottom: '0px'}}>hours of experience</h2>
                     </div>
                 </div>
             </section>
