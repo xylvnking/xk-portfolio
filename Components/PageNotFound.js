@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import lost from '../public/static/customicons/lostundraw.png'
+
+import lost from '../public/static/customicons/lostUndraw.png'
 
 import styles from './ComingSoon.module.scss'
 import Nav from './Nav'
