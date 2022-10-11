@@ -3,7 +3,7 @@ import Nav from '../Components/Nav'
 import styles from '../Components/ComingSoon.module.scss'
 import Image from 'next/image'
 
-import lost from '../public/static/customicons/lostundraw.png'
+import lost from '../public/static/customicons/lostUndraw.png'
 
 export default function human() {
   return (
