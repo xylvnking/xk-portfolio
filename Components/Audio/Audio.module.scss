@@ -815,13 +815,25 @@ $max-width: 1500px;
                     #skipWaiters { background-image: url('/static/testimonials/SkipWaitersBackgroundsmall.jpg'); }
                     #milly { background-image: url('/static/testimonials/millyback.jpg'); background-position: right; }
                     #riah { background-image: url('/static/testimonials/riahback.jpg'); }
+                    #boyscout { background-image: url('/static/testimonials/boyscoutback.jpg'); }
+                    #connory { background-image: url('/static/testimonials/coback.jpg'); }
+                    #cole { background-image: url('/static/testimonials/coleback.jpg'); }
+                    #paul { background-image: url('/static/testimonials/paulback.jpg'); }
+                    #borgers { background-image: url('/static/testimonials/borgersback.jpg'); }
+                    #rari { background-image: url('/static/testimonials/rariback.jpg'); }
+                    #max { background-image: url('/static/testimonials/maxback.jpg'); }
+                    #tevnn { background-image: url('/static/testimonials/tevnnback.jpg'); }
+                    #mappe { background-image: url('/static/testimonials/mappeback.jpg'); }
                     .testimonialBackgroundUtility {
                         background-size: cover;
                         background-position: center; 
                         
                     }
                     .testimonial {
-
+                        overflow: hidden;
+                        z-index: 2;
+                        position: relative;
+                        
                         // background-color: white;
                         // background-color: $black;
                         // min
@@ -842,6 +854,7 @@ $max-width: 1500px;
                             
                             
                         }
+                        
                         .testimonialPhotoWrapper {
                             // height: 100vh;
                             // padding: 20px;

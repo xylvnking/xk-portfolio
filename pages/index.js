@@ -3,6 +3,7 @@ import Image from 'next/image'
 import StartScreen from '../Components/StartScreen/StartScreen'
 // import styles from '../styles/StartScreen.module.scss'
 import imageShare from '../public/static/profilephotos/pp3.jpg'
+import plugins from '../public/static/backgrounds/pluginsback.jpg'
 
 export default function Home() {
   return (
