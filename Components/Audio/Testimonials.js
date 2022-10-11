@@ -11,9 +11,12 @@ import skipWaitersPhoto from '../../public/static/testimonials/SkipWaitersPressP
 import millyPhoto from '../../public/static/testimonials/millyphoto.jpg'
 import riahPhoto from '../../public/static/testimonials/riahphoto.jpg'
 
+import whitegold from '../../public/static/backgrounds/blackwhitegold.png'
+
 
 export default function Testimonials() {
   return (
+      
     <div id={styles["testimonialsContainer"]}>
         <div id={styles["testimonialsGridColumns"]}>
             <div className={styles.testimonialsColumn}>

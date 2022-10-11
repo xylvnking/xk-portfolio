@@ -3,11 +3,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import ppgif from '../../public/static/profilephotos/lilgif.gif'
+import whitegold from '../../public/static/backgrounds/blackwhitegold.png'
 
 import styles from './Audio.module.scss'
 
 export default function Contact() {
   return (
+      <>
+      
+        <div id={styles["backgroundTest"]}>
+            <Image src={whitegold} objectFit='contain'  />
+        </div>
     <div id={styles["contactContainer"]}>
         <article id={styles["contactCard"]}>
             <div id={styles["contactPhoto"]}>
@@ -33,5 +39,6 @@ export default function Contact() {
 
 
     </div>
+    </>
   )
 }

@@ -29,8 +29,13 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: default;
     // max-width: 2000px;
     // margin: auto;
+    
     #hero {
         // width: ;
+        position: relative;
+        z-index: 2;
+        
+        background-color: white;
         #heroContainer {
             // padding-top: 40px;
             padding: 10px;
@@ -62,10 +67,37 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
     #stats {
+        #background {
+            position: sticky;
+            top: 100%;
+            margin: auto;
+            max-width: 1500px;
+            z-index: 1;
+            margin-bottom: -10px;
+
+            @media(max-width: 700px) {
+                display: none;
+            }
+        }
+            
         #statsPressLogosContainer {
+            position: relative;
+            z-index: 2;
             max-width: 2000px;
             margin: auto;
             #statsOnlyContainer {
+                position: relative;
+                z-index: 2;
+                @media(min-width: 700px) {
+                    // position: fixed;
+                    // display: none;
+                    // height: 0px;
+    
+                    // margin-top: -800px;
+                    margin-top: -60%;
+                }
+
+                background-color: white;
 
                 // min-height: 100vh;
                 // display: flex;
@@ -125,13 +157,20 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                     
                 }
+                @media(max-width: 700px) {
+                    // position: fixed;
+                    // display: none;
+                    background-color: $black;
+                    // height: 0px;
+    
+                }
                 // @media(min-width: 2000px) { border-radius: 20px; }
-                background-color: $black;
+                // background-color: $black;
                 padding: 20px;
                 // border-radius: 10px;
                 // box-shadow: $subtle-shadow;
                 margin: auto;
-                background-color: $black;
+                // background-color: $black;
     
                 
                 // padding: 10px;
@@ -149,14 +188,14 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
                 // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
 
-                background-image: url('/static/backgrounds/desksmallish.png');
+                // background-image: url('/static/backgrounds/desksmallish.png');
                 background-position: top;
                 background-attachment: fixed;
                 
                 // background-size: cover;
                 // background-position: center;   
     
-                background-color: $black;
+                // background-color: $black;
                 // filter: brightness(100%);
     
                 .pressLogoWrapper {
@@ -170,6 +209,9 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
     #about {
+        position: relative;
+        z-index: 2;
+
         max-width: 2000px;
         margin: auto;
         // @media(min-width: 2000px) { border-radius: 20px; }
@@ -281,10 +323,13 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
     #playlists {
+        position: relative;
+        z-index: 2;
         #playlistContainer {
             max-width: 2000px;
             margin: auto;
-            background-image: url('/static/backgrounds/backstarssmall.jpg');
+            // background-image: url('/static/backgrounds/backstarssmall.jpg');
+            background-image: url('/static/backgrounds/backstarssmaller.jpg');
             position: center;
             // min-height: 100vh;
             background-color: $black;
@@ -352,6 +397,8 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
     #working {
+        position: relative;
+        z-index: 2;
         #workingContainer {
             .underline { 
                 text-decoration: underline; 
@@ -466,18 +513,37 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
     #contact {
-        background-color: $black;
+        background-color: white;
+        
+        #backgroundTest {
+            position: fixed;
+            top: 0px;
+            z-index: 0;
+            max-width: 2000px;
+            left: 0;
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto;
+            @media(max-width: 700px) {
+                display: none;
+            }
+        }
         #contactContainer {
+            
             max-width: 2000px;
                 margin: auto;
+                // z-index:44;
             // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
             // background-image: url('/static/backgrounds/blackwhitegold.png');
             @media(min-width: 700px) {
 
-                background-image: url('/static/backgrounds/whitegoldsmall.png');
-                background-position: top;
-                background-attachment: fixed;
-                background-size: cover;
+                // background-image: url('/static/backgrounds/whitegoldsmall.png');
+                // background-image: url('/static/backgrounds/whitegold1500.png');
+                // background-image: url('/static/backgrounds/blackwhitegold.png');
+                // background-position: top;
+                // background-attachment: fixed;
+                // background-size: cover;
+                // background-color: $black;
             }
             // background-image: url('/static/backgrounds/desksmall.png');
             // background-image: url('/static/backgrounds/topography.png');
@@ -487,14 +553,16 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             // background-position: center;
 
 
-            background-color: white;
+            // background-color: white;
             // margin-top: 20px;
             // margin-bottom: 20px;
             padding: 100px 0px 50px 0px;
             #contactCard {
+
                 // box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
                 // box-shadow: rgba(93, 93, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(62, 62, 62, 0.35) 0px -2px 6px 0px inset;
-                
+                // z-index: 5;
+                position: relative;
                 background-color: white;
                 color: $black;
                 max-width: 60ch;
@@ -535,6 +603,7 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 
                 #contactText {
                     // text-align: start;
+                    z-index: 5;
                     #contactButton {
                         display: flex;
                         justify-content: center;
@@ -579,24 +648,46 @@ $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         // background-color: $purple-analog;
     }
     #testimonials {
+        #backgroundTest {
+            // background-color: #00a3ff;
+            // height: 100%;
+            // width: 100%;
+            // top: 0px;
+            // position: sticky;
+            position: absolute;
+            // position: relative;
+            z-index: 4;
+            @media(max-width: 700px) {
+                // position: fixed;
+                display: none;
+                // height: 0px;
+
+            }
+        }
         #testimonialsContainer {
+            z-index: 2;
+            position: relative;
             max-width: 2000px;
                 margin: auto;
+                // background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
             // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
+
             // background-image: url('/static/backgrounds/blackwhitegold.png');
-            background-image: url('/static/backgrounds/whitegoldsmall.png');
+            // background-image: url('/static/backgrounds/whitegoldsmall.png');
+            // background-image: url('/static/backgrounds/whitegoldsmall.png');
+            // background-size: cover;
+            // background-attachment: fixed;
+            // background-size: 200px;
+
             // background-image: url('/static/backgrounds/topography.png');
-            // background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
-            background-size: cover;
             // background-repeat: repeat-x;
             // background-repeat: repeat-y;
             // background-position: center;
-            background-attachment: fixed;
             
-            background-color: $black;
-            background-color: white;
+            // background-color: white;
             padding: 10px;
             padding-top: 50px;
+            // background-color: $black;
 
             #testimonialsGridColumns {
                 // margin: 10px;

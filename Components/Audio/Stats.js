@@ -28,8 +28,16 @@ import uberflipLogo from '../../public/static/audiopresslogos/uberflip.png'
 import viceLogo from '../../public/static/audiopresslogos/vice.png'
 import exclaimLogo from '../../public/static/audiopresslogos/exclaim.png'
 
+import desk from '../../public/static/backgrounds/desksmallish.png'
+
 export default function Stats() {
     return (
+        <>
+
+        
+        <div id={styles["background"]}>
+            <Image src={desk} objectFit='contain'  />
+        </div>
         <div id={styles["statsPressLogosContainer"]}>
             <section id={styles["statsOnlyContainer"]}>
                 <div id={styles["stats"]}>
@@ -51,8 +59,10 @@ export default function Stats() {
                     </div>
                 </div>
             </section>
-
+            <>
+            
             <div id={styles["pressLogosContainer"]}>
+            
                 <div className={styles.pressLogoWrapper}>
                     <Image src={muchLogo} objectFit='contain' quality={10}/>
                 </div>
@@ -129,7 +139,9 @@ export default function Stats() {
                     <Image src={ridethetempoLogo} objectFit='contain' quality={10}/>
                 </div>
             </div>
+            </>
             
         </div>
+        </>
     )
 }

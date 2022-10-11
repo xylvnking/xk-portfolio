@@ -4,11 +4,11 @@ import Image from 'next/image'
 import styles from './Dev.module.scss'
 
 
-import githubIconGif from '../../public/static/githubgif.gif'
+// import githubIconGif from '../../public/static/githubgif.gif'
 import transferss from '../../public/static/projects/transferss.png'
-import screenshot2 from '../../public/static/projects/ss2.png'
-import screenshot4 from '../../public/static/projects/ss4.png'
-import screenshot5 from '../../public/static/projects/ss5.png'
+// import screenshot2 from '../../public/static/projects/ss2.png'
+// import screenshot4 from '../../public/static/projects/ss4.png'
+// import screenshot5 from '../../public/static/projects/ss5.png'
 import hookdemosSS from '../../public/static/projects/hookdemosscreenshot.png'
 import markdownEditorSS from '../../public/static/projects/markdowneditorss.png'
 import handdetectionSS from '../../public/static/projects/handdetectionss.png'
@@ -33,11 +33,11 @@ import substanceLogo from '../../public/static/substancelogo.png'
 import nextLogo from '../../public/static/nextBlack.png'
 // import nextLogo from '../../public/static/nextText.png'
 
-import gitLogo from '../../public/static/git.png'
+// import gitLogo from '../../public/static/git.png'
 import threeLogo from '../../public/static/three.png'
 import blenderLogo from '../../public/static/blender.png'
-import photoshoplogo from '../../public/static/photoshop.png'
-import githubTextBlack from '../../public/static/githubblacktext.png'
+// import photoshoplogo from '../../public/static/photoshop.png'
+// import githubTextBlack from '../../public/static/githubblacktext.png'
 
 
 export default function Projects() {
@@ -106,7 +106,7 @@ export default function Projects() {
                     <section className={styles.projectInfo}>
                         <div>
                             <h4>User Authentication</h4>
-                            <p>Users have personal data which only they can alter, backed up by server-side security rules.</p>
+                            <p>Users have personal data which only they can alter, backed up by server-side security rules. Features the official Google pop-up window.</p>
                         </div>
                         <div>
                             <h4>File Storage</h4>
@@ -114,27 +114,27 @@ export default function Projects() {
                         </div>
                         <div>
                             <h4>NoSQL Cloud Backend</h4>
-                            <p>Listicle put a bird on it irony roof party bitters freegan. Next level af jean shorts, air plant kinfolk mlkshk cold-pressed keffiyeh la croix slow-carb plaid gastropub ugh letterpress.</p>
+                            <p>Google Firebase backend featuring a scalable and secure data structure. A lot of features will be added, all of which have been accounted for in the design.</p>
                         </div>
                         <div>
                             <h4>Custom React Hooks</h4>
-                            <p>Gatekeep tote bag live-edge kickstarter seitan bicycle rights. Wayfarers subway tile fanny pack gluten-free, next level freegan locavore iceland. </p>
+                            <p>I wish I knew how easy these were to create earlier in my self-education journey. I created some for fetching data mostly as practise and to keep components clean, but as time goes on they'll be more useful as they're reused.</p>
                         </div>
                         <div>
                             <h4>User-configurable Priviledges</h4>
-                            <p>Organic tonx pork belly praxis meditation chillwave unicorn neutra hell of. Tofu paleo pok pok vegan, 3 wolf moon hexagon praxis iceland blog unicorn church-key farm-to-table ascot direct trade. </p>
+                            <p>This app relies on users being able to control who else has read and write priviledges on data they share. Users upload songs which they then have admin and access roles they can assign to others. The songs exist independently of users, allowing flexibility and convenience as permissions change and also allows secutiy rules to be set on file storage to only allow users to access files for songs they have access to.</p>
                         </div>
                         <div>
                             <h4>Realtime Data Updates</h4>
-                            <p>Gluten-free celiac same keffiyeh, tacos succulents deep v meggings fixie fanny pack blog. Shoreditch live-edge affogato before they sold out, fingerstache cronut wayfarers cornhole gentrify whatever echo park air plant master cleanse.</p>
+                            <p>Even though this is currently an <em>asynchronous</em> app, the data still updates in realtime. A lot of the features which will be added in the future will be more focused on potential realtime collaboration, so it was important for me to include this from the start to ensure doing so wouldn't cause problems later.</p>
                         </div>
                         <div>
                             <h4>CRUD Functionality</h4>
-                            <p>Wolf bicycle rights schlitz, fixie marfa sustainable chambray plaid farm-to-table. Master cleanse 8-bit fashion axe gluten-free crucifix. Biodiesel whatever seitan la croix retro. </p>
+                            <p>Users can create, read, update, and delete data (so long as they have the proper permissions to do so). The revision area is also using debouncing to save superfulous reads and writes to the backend.</p>
                         </div>
                         <div>
                             <h4>Page Routing</h4>
-                            <p>Banh mi thundercats crucifix selfies paleo intelligentsia roof party readymade JOMO coloring book godard hexagon shaman lumbersexual kitsch. Bodega boys poke VHS retro.</p>
+                            <p>Next.js has really great routing and I'm using it to my advantage. Using a combination of a Layout, dynamic routes, catch-alls, and parameters, I've been able to keep the amount of pages needed super low while providing that single page application feel.</p>
                         </div>
                     </section>
                     <>
@@ -182,7 +182,7 @@ export default function Projects() {
 
                         <article className={styles.secondaryProject}>
                             <header className={styles.secondaryProjectTitles}>
-                                <h1>React Hook TypeScript Demos</h1>
+                                <h1>React Hooks TypeScript Demos</h1>
                                 <h2>Interactive documentation demonstrating how to use all the built-in React Hooks with Typescript</h2>
                             </header>
                             <div className={styles.secondaryProjectTechLogos}>
@@ -200,7 +200,9 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className={styles.secondaryProjectDescription}>
-                                <p>Pop-up hella vinyl asymmetrical try-hard shabby chic, mustache meggings. Authentic kitsch polaroid kickstarter vice ugh affogato umami same pour-over food truck banh mi jianbing. Shaman normcore DSA pickled. </p>
+                                <p>
+                                    I admittedly overused useState and useEffect without properly learning all the other main hooks for a while. I made this project to learn them, and to practise TypeScript. I learned a <em>ton</em> while making this project. I cannot believe I hadn't used useRef more, it's so useful!
+                                </p>
                             </div>
                             <div className={styles.screenshotImageWrapper}>
                                 <Image src={hookdemosSS} objectFit='contain' />
@@ -238,7 +240,12 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className={styles.secondaryProjectDescription}>
-                                <p>Intelligentsia humblebrag occupy yr, leggings chartreuse vinyl hexagon polaroid ethical readymade palo santo selvage. Jianbing dreamcatcher vibecession Brooklyn meh mustache hashtag taiyaki readymade.</p>
+                                <p>
+                                    I had started learning firebase and wanted to create a project using that. I was also really loving markdown, so I integrated the unified.js parser and it turned out incredibly considering how much of a beginner I was at the time.
+                                </p>
+                                <p>
+                                    The biggest challenge was the dynamic sidebar which was synced in realtime to the backend. My solution for it at the time was pretty comedic, but I was just starting out so I'm giving myself a pass. It was a clever solution, but I've learned that sometimes clever isn't optimal.
+                                </p>
                             </div>
                             <div className={styles.screenshotImageWrapper}>
                                 <Image src={markdownEditorSS} objectFit='contain' />
@@ -276,7 +283,8 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className={styles.secondaryProjectDescription}>
-                                <p>Umami narwhal franzen, affogato selvage green juice tumeric direct trade semiotics aesthetic live-edge. Slow-carb raclette seitan single-origin coffee, tilde messenger bag dreamcatcher affogato hella photo booth.</p>
+                                <p>I spent half a year learning to work with 3D graphics before starting to learn web development, so I absolutely had to learn three.js. If I'm being honest I'm not a huge fan of it because of the performance issues - most computers (my 8 year old macbook included) just aren't equipped to handle 3D graphics. You can use fallbacks and Suspense and whatnot but overall it's not something I chose to focus on during my self-education. It has its use cases, but I didn't posess any of those.</p>
+                                <p>This project was the first I ever took on and it was <em>a lot</em> for me at the time. There was a ton of state being passed around to control all the material layers and transforms and everything. You can check out the code - it's organized but you can imagine a very stressed green dev sweating over it for a couple weeks in the summer. Overall I'm proud of it but yeah, not huge on 3D on the web for my current needs tbh.</p>
                             </div>
                             <div className={styles.screenshotImageWrapper}>
                                 <Image src={threeDeeEditorSS} objectFit='contain' />
@@ -330,7 +338,8 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className={styles.secondaryProjectDescription}>
-                                <p>Jean shorts cronut plaid wayfarers. Fit Brooklyn pok pok meggings, chartreuse DSA paleo distillery taiyaki ethical vegan drinking vinegar. Cray wolf freegan venmo 3 wolf moon fixie.</p>
+                                <p>I can't go 10 seconds online without being inundated with content about machine learning or AI, so I decided to see what I could do myself. I was pleasantly surprised at how smooth the process was to use the tensorflow models with javascript.</p>
+                                <p>While creating this I actually found some dead links in the documentation, so took it as my chance to perform <a target='_blank' href='https://github.com/tensorflow/tfjs-models/pull/1040#event-7461642697'>my first contribution to an open source project by making a pull request which was accepted,</a> making me an official contributor, technically. 😎</p>
                             </div>
                             <div className={styles.screenshotImageWrapper}>
                                 <Image src={handdetectionSS} objectFit='contain' />
@@ -371,7 +380,13 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className={styles.secondaryProjectDescription}>
-                                <p>Shoreditch pug truffaut wolf tilde kickstarter. Echo park raclette farm-to-table hella cliche. Vinyl master cleanse tacos authentic deep v try-hard. Hoodie DIY migas hella freegan offal paleo unicorn.</p>
+                                <p>Game engines generally use ticks or frames to measure the passage of time - but this project relies on React's re-rendering of components to do the same.</p>
+                                <p>There's a lot of pieces of state going on at once to make even a simple game function without bugs. This was made before I had started using useRef, which would have made this project 10 times easier to create. Based on the complex combination of state, the user's input has different effects and they progress through some menus and a 'combat' section.</p>
+                                <p>I learned a lot from this project and completed it within the scope I had planned. I'm super interested in building on this concept in the future, as I'm really passionate about audio-games especially from an accessibility perspective. This game works perfectly with a screenreader.</p>
+
+
+
+
 
                             </div>
                             <div className={styles.screenshotImageWrapper}>
@@ -414,16 +429,16 @@ export default function Projects() {
                     <ul>
                         <li>
                                 <a target='_blank' href='https://github.com/xylvnking/xk-portfolio'>Portfolio v2 (this website)</a>
-                                <h2>Lo-fi austin poke irony copper mug gatekeep offal ugh, waistcoat narwhal prism.Drinking vinegar farm-to-table synth four loko tacos hexagon irony man braid bushwick venmo copper mug vinyl pickled mlkshk literally.</h2>
+                                <h2>I'm honestly so proud of this website because it looks amazing. I learned a lot of small html/scss tricks while making this and really wanted it to be something special. Overall it's probably a couple thousand lines (being basically 4 websites in one all with static hard-coded data/content) and I have zero problems navigating the file-structure or any of files because I kept it all very obvious and organized.</h2>
                         </li>
                         <li>
                             
                                 <a target='_blank' href='https://github.com/xylvnking/xk-portfolio'>Portfolio v1</a>
-                                <h2>Drinking vinegar farm-to-table synth four loko tacos hexagon irony man braid bushwick venmo copper mug vinyl pickled mlkshk literally.</h2>
+                                <h2>It was okay. I knew I was going to make a better one, so I didn't go all out with it. I took some design ideas from it for this one. This first one was also strictly for development, so I knew I'd need one for my audio work (thus this multi one).</h2>
                         </li>
                         <li>
                                 <a target='_blank' href='https://github.com/xylvnking/xk-tensorflow-face-detection'>Tensorflow face detection</a>
-                                <h2>Drinking vinegar farm-to-table synth four loko tacos hexagon irony man braid bushwick venmo copper mug vinyl pickled mlkshk literally. Drinking vinegar farm-to-table synth four loko tacos hexagon irony man braid bushwick venmo copper mug vinyl pickled mlkshk literally.</h2>
+                                <h2>First time working with tensorflow.js. I got this working well but wanted to manipulate a 3D object  so I made a new one and used my hand instead.</h2>
                         </li>
                         <li>
                                 <a target='_blank' href='https://github.com/xylvnking/dashboardV1'>Audio collaboration platform v2</a>
