@@ -13,12 +13,6 @@ $max-width: 1500px;
 
 .blueText { color: $blue-darker}
 .greenText { color: $green; }
-
-// .blueText { color: $red}
-// .greenText { color: $red; }
-
-// .blueText { color: $purple}
-.greenText { color: $purple; }
 .purpleText { color: $purple; }
 
 .underline { text-decoration: underline; cursor: pointer;}
@@ -56,8 +50,11 @@ $max-width: 1500px;
                 }
                 height: 100vh;
                 // height: 75vh;
-                // font-size: 5vw;
-                font-size: 64px;
+                font-size: 5vw;
+                @media(min-width: 1500px) {
+                    font-size: 64px;
+
+                }
                 max-width: $max-width;
                 margin: auto;
                 display: flex;
@@ -172,7 +169,17 @@ $max-width: 1500px;
                 @media(max-width: 700px) {
                     // position: fixed;
                     // display: none;
+
+
+
+
                     background-color: $black;
+
+
+
+
+
+
                     // height: 0px;
                     
                 }
@@ -470,6 +477,7 @@ $max-width: 1500px;
     #working {
         position: relative;
         z-index: 2;
+        background-color: white;
         #workingContainer {
             z-index: 2;
             // box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -589,7 +597,8 @@ $max-width: 1500px;
         }
     }
     #contact {
-        background-color: white;
+        // background-color: white;
+        
         
         #backgroundTest {
             position: fixed;
@@ -603,20 +612,22 @@ $max-width: 1500px;
             margin-right: auto;
             @media(max-width: 700px) {
                 display: none;
+                // background-color: #5f5f5f;
             }
-            @media(min-width: 20000px) {
+            @media(min-width: 2001px) {
                 display: none;
             }
 
         }
         #contactContainer {
-            
+            z-index: 2;
+        position: relative;
             max-width: $max-width;
                 margin: auto;
                 // z-index:44;
             // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
             // background-image: url('/static/backgrounds/blackwhitegold.png');
-            @media(min-width: 700px) {
+            @media(max-width: 700px) {
 
                 // background-image: url('/static/backgrounds/whitegoldsmall.png');
                 // background-image: url('/static/backgrounds/whitegold1500.png');
@@ -624,7 +635,7 @@ $max-width: 1500px;
                 // background-position: top;
                 // background-attachment: fixed;
                 // background-size: cover;
-                // background-color: $black;
+                background-color: white;
             }
             // background-image: url('/static/backgrounds/desksmall.png');
             // background-image: url('/static/backgrounds/topography.png');
@@ -649,20 +660,25 @@ $max-width: 1500px;
                 max-width: 60ch;
                 margin: auto;
                 padding: 40px;
-                border-radius: 20px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
-                @media(min-width: 700px) {
-                    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-                    flex-direction: row;
+                border-radius: 0px;
+                // @media(max-width: 700px) {
+                    // }
+                    
+                    @media(min-width: 700px) {
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                        flex-direction: row;
+                        border-radius: 20px;
+                    
 
                     
-                }
+                    }
                 #contactPhoto {
-                    background-color: #00a3ff;
+                    // background-color: #00a3ff;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -730,15 +746,25 @@ $max-width: 1500px;
     }
     #testimonials {
         #backgroundTest {
+            // mobile only
             // background-color: #00a3ff;
-            // height: 100%;
             // width: 100%;
-            // top: 0px;
+            // height: 0px;
             // position: sticky;
-            position: absolute;
+            position: fixed;
+            width: 200%;
+            // position: absolute;
+            top: 0px;
+            // height: 100vh;
             // position: relative;
-            z-index: 4;
-            @media(max-width: 700px) {
+            z-index: 0;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            // margin-left: auto;
+            // margin-right: auto;
+            // max-width: $max-width;
+            @media(min-width: 700px) {
                 // position: fixed;
                 display: none;
                 // height: 0px;
@@ -768,7 +794,7 @@ $max-width: 1500px;
             // background-color: white;
             padding: 10px;
             padding-top: 50px;
-            // background-color: $black;
+            
 
             #testimonialsGridColumns {
                 // margin: 10px;
@@ -796,7 +822,7 @@ $max-width: 1500px;
                     }
                     .testimonial {
 
-                        background-color: white;
+                        // background-color: white;
                         // background-color: $black;
                         // min
                         // col

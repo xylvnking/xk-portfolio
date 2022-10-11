@@ -133,22 +133,12 @@ $blue: #6ecbf5;
             //     transform: rotate(-.5deg);
             // }
             #human {
-                // transform: rotate(4deg);
-                // transform: perspective(20px);
-                // transform: rotateZ(90deg);
-                // transform: skewY(-20deg);
+
                 transform: translateY(8px) rotate(2.5deg);
                 &:hover {
                     
                     color: #6ecbf5;
                     transform: translateY(8px) rotate(2.5deg) scale(105%);
-                    // transform: translateY(8px) rotate(-1deg) scale(105%);
-                    // svg {
-                    //     transition: transform 5s;
-                    //     // transform: rotate(900deg);
-                    //     transform: rotate(897.5deg) scale(130%);
-                    //     // transform: rotate(360deg);
-                    // }
                 }
                 
             }

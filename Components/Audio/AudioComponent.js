@@ -11,6 +11,7 @@ import About from './About'
 import Playlists from './Playlists'
 import Working from './Working'
 import Contact from './Contact'
+import Nav from '../Nav'
 
 
 
@@ -24,6 +25,7 @@ export default function AudioComponent() {
                 <link rel="icon" href="favicon.ico?v=1.1" />
             </Head>
             <main>
+                {/* <Nav /> */}
                 <section id={styles["hero"]}>
                     <Hero />
                 </section>
