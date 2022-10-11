@@ -120,12 +120,7 @@ using insets to create more depth from the elements which are meant to look on t
 
 # to do
 
-maybe add something to the right side of about section for larger screens, looks a little funny
-
-also render a version of the desk which better fits the dimensions required. right now the breakpoint is 1500 when it should be 2000 to match the rest of th website
-
 probably optimize the playlists background or use something different, it's a portrait photo being used in landscape dimensions and doesn't need to be parralax either
 
-also make sure the top section hack works on larger screen sizes, some funny business looks like. might have to do with max width and media query - look at how other sites resize like reddit and youtube. maybe the giant title is causing issues? i want it so that basically when i switch screens it looks the same, which is what happens with those other sites. 
 
 good job today.

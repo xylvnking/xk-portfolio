@@ -9,6 +9,8 @@ $green: #00c735;
 $subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
+$max-width: 1500px;
+
 .blueText { color: $blue-darker}
 .greenText { color: $green; }
 
@@ -20,6 +22,8 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
 .purpleText { color: $purple; }
 
 .underline { text-decoration: underline; cursor: pointer;}
+
+
 
 // .blueText { color: $blue-darker}
 // .greenText { color: $blue-darker; }
@@ -52,7 +56,10 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
                 }
                 height: 100vh;
                 // height: 75vh;
-                font-size: 5vw;
+                // font-size: 5vw;
+                font-size: 64px;
+                max-width: $max-width;
+                margin: auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -72,7 +79,7 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
             position: sticky;
             top: 100%;
             margin: auto;
-            max-width: 1500px;
+            max-width: $max-width;
             z-index: 1;
             margin-bottom: -10px;
 
@@ -87,7 +94,7 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
             
             position: relative;
             z-index: 3;
-            max-width: 2000px;
+            max-width: $max-width;
             margin: auto;
             #statsOnlyContainer {
                 position: relative;
@@ -159,7 +166,7 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
                 @media (min-width: 450px) {
                     gap: 20px;
                     // max-width: 50ch;
-                    max-width: 2000px;
+                    max-width: $max-width;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                 }
                 @media(max-width: 700px) {
@@ -169,13 +176,13 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
                     // height: 0px;
                     
                 }
-                @media(min-width: 1500px) {
-                    // position: fixed;
-                    // display: none;
-                    background-color: $black;
-                    // height: 0px;
+                // @media(min-width: 1500px) {
+                //     // position: fixed;
+                //     // display: none;
+                //     background-color: $black;
+                //     // height: 0px;
                     
-                }
+                // }
                 // box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
                 // box-shadow: $card-shadow;
                 // @media(min-width: 2000px) { border-radius: 20px; }
@@ -226,7 +233,7 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
         position: relative;
         z-index: 2;
 
-        max-width: 2000px;
+        max-width: $max-width;
         margin: auto;
         // @media(min-width: 2000px) { border-radius: 20px; }
 
@@ -252,6 +259,8 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
             margin-left: auto;
             
             text-align: justify;
+        //     position: relative;
+        // z-index: 2;
             // min-height: 50vh;
             // dis
             // display: flex;
@@ -348,18 +357,53 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
     #playlists {
         position: relative;
         z-index: 2;
-        #playlistContainer {
-            max-width: 2000px;
+        // max-height: 2000px;
+        // overflow: hidden;
+        // min-height: 700px;
+        #background {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // position: sticky;
+            position: absolute;
+            // position: fixed;
+            // top: 100%;
+            
+            // top: 0px;
+            left: 0px;
+            right: 0px;
             margin: auto;
+            // margin-left: auto;
+            // margin-right: auto;
+            max-width: $max-width;
+            z-index: 0;
+            
+            // @media(min-width)
+            
+            @media(max-width: 700px) {
+                display: none;
+            }
+
+        }
+        #playlistContainer {
+            max-width: $max-width;
+            margin: auto;
+            // min-height: 700px;
             // background-image: url('/static/backgrounds/backstarssmall.jpg');
-            background-image: url('/static/backgrounds/backstarssmaller.jpg');
+            // background-image: url('/static/backgrounds/backstarssmaller.jpg');
+            // background-image: url('https://mj-gallery.com/da750a35-e84d-43ac-aaa5-204eba315288/grid_0.png');
             position: center;
-            // min-height: 100vh;
-            background-color: $black;
+            @media(max-width: 700px) {
+                display: none;
+                background-color: $black;
+            }
+            // margin-top: -38%;
             background-size: cover;
             background-attachment: fixed;
-            background-position: right;
-            // margin: auto;
+            // background-position: right;
+            // background-size: 200px;
+            
+
             display: grid;
             // width: 100%;
             grid-template-columns: 1fr;
@@ -439,7 +483,7 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
                 }
             }
             .grid {
-                max-width: 2000px;
+                max-width: $max-width;
                 margin: auto;
             
                 // min-height: 50vh;
@@ -551,7 +595,8 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
             position: fixed;
             top: 0px;
             z-index: 0;
-            max-width: 2000px;
+            // max-width: $max-width;
+            max-width: $max-width;
             left: 0;
             right: 0; 
             margin-left: auto; 
@@ -559,10 +604,14 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
             @media(max-width: 700px) {
                 display: none;
             }
+            @media(min-width: 20000px) {
+                display: none;
+            }
+
         }
         #contactContainer {
             
-            max-width: 2000px;
+            max-width: $max-width;
                 margin: auto;
                 // z-index:44;
             // background-image: url('/static/backgrounds/blackpaperbackground.jpg');
@@ -699,7 +748,7 @@ $card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3
         #testimonialsContainer {
             z-index: 2;
             position: relative;
-            max-width: 2000px;
+            max-width: $max-width;
                 margin: auto;
                 // background-image: url('https://media1.giphy.com/media/hLqlQjr7zHqhdkQ94M/giphy.gif?cid=790b761110dc32993e8f14889f2089fbe5308096439879b6&rid=giphy.gif&ct=g');
             // background-image: url('/static/backgrounds/blackpaperbackground.jpg');

@@ -25,7 +25,7 @@ export default function Working() {
                     {/* <Image src={contactBlue} objectFit='contain' /> */}
                     <Image src={contactPurple} objectFit='contain' />
                 </div>
-                <h1><span className={styles.purpleText}><span className={styles.underline}>Contact me</span></span> to talk about your music, budget, and timeline</h1>
+                <h1><span className={styles.purpleText}><span className={styles.underline}><a target='_blank' href='https://www.instagram.com/xylvnking/'>Contact me</a></span></span> to talk about your music, budget, and timeline</h1>
             </div>
 
             <div className={styles.arrowContainer}>
