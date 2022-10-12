@@ -1,47 +1,26 @@
 $black: rgb(30, 30, 30);
+$light-black: #5f5f5f;
 $red: rgba(255,91,91,1);
 $pink: #c252e1;
+$purple: #7D59C7;
 $blue: #6ecbf5;
-
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Poppins', sans-serif;
-
+$blue-darker: #00a3ff;
+$green: #00c735;
+$subtle-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$card-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 .container {
-    // transform: scale(120%);
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
-    // background-color: black;
-    background: rgb(194,82,225);
-    background: linear-gradient(90deg, rgba(194,82,225,1) 0%, rgba(110,203,245,1) 88%);
-    // image credit: https://giphy.com/ericaofanderson/
-    background-image: url('https://media2.giphy.com/media/2SYpZ92iLQsF6QZl5u/giphy.gif?cid=ecf05e470hybfbxgz4ke05s9j7a55gxv0v9af8ahrq2kaqtu&rid=giphy.gif&ct=g');
-    // background-image: url('https://media0.giphy.com/media/3o7aCPFfNF8uCXO6xa/giphy.gif?cid=ecf05e47xhw3ui7q1jr6md8i31kc5b15mmlbn9wlt8s59ntz&rid=giphy.gif&ct=g');
+    background-color: $black;
     background-size: cover;
     background-position: center;    
-    // opacity: .5; 
     .innerContainer {
-
-
-        // background-color: aquamarine;
         display: grid;
-
         grid-template-columns: 1fr;
-        
-        // grid-template-rows: 25vh 25vh 25vh 25vh;
-        grid-template-rows: 20vh 20vh 20vh 20vh;
-        // grid-template-rows: 15vh 15vh 15vh 15vh;
         gap: 20px;
-
-        // grid-template-columns: 50vw 50vw;
-        // grid-template-rows: 50vh 50vh;
-
-        // font-size: 24px;
-        
-        
-        
         section {
             font-size: 1.25em;
             @media (max-width: 450px) { font-size: 1em; }
@@ -49,47 +28,23 @@ $blue: #6ecbf5;
                 transform: scale(120%);
                 margin-left: 10px;
             }
-
-
             background-color: rgba(255, 255, 255, 0.89);
             backdrop-filter: blur(10px);
-
-            
-            // width: 450px;
             cursor: pointer;
-            // border-bottom: 5px solid black;
-            // border-top: 5px solid black;
-            border-left: 10px solid rgb(30, 30, 30);
-            // border-right: 10px solid black;
-            
-            
+            // border-left: 10px solid rgb(0, 0, 0);
             border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            // box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-            // padding-left: 10px;
+            // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: $card-shadow;
             padding: 10px;
             padding-right: 20px;
-            // &:is(:last-child) {
-                //     border-bottom: none;
-                // }
-                color: $black;
-                
-                display: flex;
-                align-items: center;
-                // align-items: flex-start;
-                // justify-content: flex-start;
-                
-                
-                gap: 20px;
+            color: $black;
+            display: flex;
+            align-items: center;
+            gap: 20px;
             div {
-                // border-left: 2px solid rgba(30, 30, 30, 0.517);
-                // padding-left: 10px;
-                // padding-left: 20px;
-
-
-
                 display: flex;
                 flex-direction: column;
+                padding: 20px;
                 h1 {
                     margin: 0px;
                 }
@@ -99,49 +54,42 @@ $blue: #6ecbf5;
                     color: grey;
                 }
             }
-            
             &:hover {
                 transition: background-color .2s, color .2s, transform .2s;
                 background-color: $black;
                 color: white;
                 transform: scale(102.5%);
-
-                // display: flex;
-
                 div {
                     transition: transform .2s;
                     transform: translateX(2.5px) rotate(-.5deg) scale(102.5%);
-                    // transform: scale(102.5%);
                 }
                 svg {
                     transition: fill .2s, transform .2s;
                     fill: white;
-                    // transform: rotate(2.5deg) scale(120%);
                     transform: rotate(2.5deg) scale(130%);
                 }
             }
-            
-
         }
-            // #dev {
-            //     transform: rotate(-.5deg);
-            // }
-            // #audio {
-            //     transform: rotate(.5deg);
-            // }
-            // #three {
-            //     transform: rotate(-.5deg);
-            // }
-            #human {
-
-                transform: translateY(8px) rotate(2.5deg);
-                &:hover {
-                    
-                    color: #6ecbf5;
-                    transform: translateY(8px) rotate(2.5deg) scale(105%);
-                }
-                
+        #dev {
+        border-left: 10px solid $green;
+        border-left: 10px solid $blue-darker;
+        }
+        #audio {
+            border-left: 10px solid $purple;
+            border-left: 10px solid $blue-darker;
+        }
+        #three {
+            border-left: 10px solid $blue-darker;
+        }
+        #human {
+            border-left: 10px solid $blue-darker;
+            transform: translateY(8px) rotate(2.5deg);
+            &:hover {
+                color: #6ecbf5;
+                transform: translateY(8px) rotate(2.5deg) scale(105%);
             }
+            
+        }
     }
 
 }
