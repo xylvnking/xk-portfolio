@@ -6,9 +6,8 @@ import styles from './Dev.module.scss'
 
 // import githubIconGif from '../../public/static/githubgif.gif'
 import transferss from '../../public/static/projects/transferss.png'
-// import screenshot2 from '../../public/static/projects/ss2.png'
-// import screenshot4 from '../../public/static/projects/ss4.png'
-// import screenshot5 from '../../public/static/projects/ss5.png'
+import mainprojectscreenshot from '../../public/static/projects/mainprojectscreenshot.png'
+
 import hookdemosSS from '../../public/static/projects/hookdemosscreenshot.png'
 import markdownEditorSS from '../../public/static/projects/markdowneditorss.png'
 import handdetectionSS from '../../public/static/projects/handdetectionss.png'
@@ -90,7 +89,7 @@ export default function Projects() {
 
                     <section className={styles.projectLinks}>
                         <div className={styles.projectLinkButton}>
-                            <a className={styles.liveSiteLink}>Visit the live site</a>
+                            <a className={styles.liveSiteLink} href="https://xk-audio-filesharing.vercel.app/" target='_blank'>Visit the live site</a>
                             <svg fill='#1e1e1e' xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z" /></svg>
                         </div>
                         <div className={styles.projectLinkButton}>
@@ -100,7 +99,8 @@ export default function Projects() {
                     </section>
 
                     <div className={styles.nextImageWrapperScreenshot}>
-                        <Image src={transferss} objectFit='contain' />
+                        {/* <Image src={transferss} objectFit='contain' /> */}
+                        <Image src={mainprojectscreenshot} objectFit='contain' />
                     </div>
 
                     <section className={styles.projectInfo}>
