@@ -36,7 +36,7 @@ export default function Stats() {
 
         
         <div id={styles["background"]}>
-            <Image src={desk} objectFit='contain'  />
+            <Image src={desk} objectFit='contain' quality={100} priority='true'/>
         </div>
         <div id={styles["statsPressLogosContainer"]}>
             <section id={styles["statsOnlyContainer"]}>
@@ -64,29 +64,29 @@ export default function Stats() {
             <div id={styles["pressLogosContainer"]}>
             
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={muchLogo} objectFit='contain' quality={10}/>
+                    <Image src={muchLogo} objectFit='contain' quality={10} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={viceLogo} objectFit='contain' quality={10}/>
+                    <Image src={viceLogo} objectFit='contain' quality={10} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={spotifyLogo} objectFit='contain' quality={10}/>
+                    <Image src={spotifyLogo} objectFit='contain' quality={10} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={faderLogo} objectFit='contain' quality={10}/>
+                    <Image src={faderLogo} objectFit='contain' quality={10} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={dynmkLogo} objectFit='contain' quality={10}/>
+                    <Image src={dynmkLogo} objectFit='contain' quality={10} priority='true'/>
                 </div>
                 
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={exclaimLogo} objectFit='contain' quality={10}/>
+                    <Image src={exclaimLogo} objectFit='contain' quality={10} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={mtvLogo} objectFit='contain' quality={10}/>
+                    <Image src={mtvLogo} objectFit='contain' quality={10} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={appleMusicLogo} objectFit='contain' quality={10}/>
+                    <Image src={appleMusicLogo} objectFit='contain' quality={10} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
                     <Image src={shazamLogo} objectFit='contain' quality={10}/>
