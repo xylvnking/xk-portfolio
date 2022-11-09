@@ -38,12 +38,12 @@ export default function AudioComponent() {
                 <section id={styles["playlists"]}>
                     <Playlists />
                 </section>
-                <section id={styles["working"]}>
+                {/* <section id={styles["working"]}>
                     <Working />
-                </section>
-                <section id={styles["contact"]}>
+                </section> */}
+                {/* <section id={styles["contact"]}>
                     <Contact />
-                </section>
+                </section> */}
                 <section id={styles["testimonials"]}>
                     <Testimonials />
                 </section>

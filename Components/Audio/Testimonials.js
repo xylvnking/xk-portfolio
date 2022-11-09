@@ -26,10 +26,9 @@ import whitegold from '../../public/static/backgrounds/blackwhitegold.png'
 export default function Testimonials() {
   return (
       <>
-      <div id={styles["backgroundTest"]}>
-            {/* // mobile only */}
+      {/* <div id={styles["backgroundTest"]}>
             <Image src={whitegold} objectFit='contain'  />
-        </div>
+        </div> */}
         <div id={styles["testimonialsContainer"]}>
             <div id={styles["testimonialsGridColumns"]}>
                 <div className={styles.testimonialsColumn}>

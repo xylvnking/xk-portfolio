@@ -64,79 +64,79 @@ export default function Stats() {
             <div id={styles["pressLogosContainer"]}>
             
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={muchLogo} objectFit='contain' quality={10} priority='true'/>
+                    <Image src={muchLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={viceLogo} objectFit='contain' quality={10} priority='true'/>
+                    <Image src={viceLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={spotifyLogo} objectFit='contain' quality={10} priority='true'/>
+                    <Image src={spotifyLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={faderLogo} objectFit='contain' quality={10} priority='true'/>
+                    <Image src={faderLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={dynmkLogo} objectFit='contain' quality={10} priority='true'/>
-                </div>
-                
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={exclaimLogo} objectFit='contain' quality={10} priority='true'/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={mtvLogo} objectFit='contain' quality={10} priority='true'/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={appleMusicLogo} objectFit='contain' quality={10} priority='true'/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={shazamLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={suicidesheepLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={nestLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={paperbagLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={hillydillyLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={cbcLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={sofarLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={uberflipLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={publicspaceLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={earmilkLogo} objectFit='contain' quality={10}/>
-                </div>
-                <div className={styles.pressLogoWrapper}>
-                    <Image src={bullettLogo} objectFit='contain' quality={10}/>
+                    <Image src={dynmkLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={conexLogo} objectFit='contain' quality={10}/>
+                    <Image src={exclaimLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={thissongslapsLogo} objectFit='contain' quality={10}/>
+                    <Image src={mtvLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={hiphopcanadaLogo} objectFit='contain' quality={10}/>
+                    <Image src={appleMusicLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={shazamLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={suicidesheepLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={nestLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={paperbagLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={hillydillyLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={cbcLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={sofarLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={uberflipLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={publicspaceLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={earmilkLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={bullettLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={kaltbultLogo} objectFit='contain' quality={10}/>
+                    <Image src={conexLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
                 <div className={styles.pressLogoWrapper}>
-                    <Image src={ridethetempoLogo} objectFit='contain' quality={10}/>
+                    <Image src={thissongslapsLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={hiphopcanadaLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={kaltbultLogo} objectFit='contain' quality={2} priority='true'/>
+                </div>
+                <div className={styles.pressLogoWrapper}>
+                    <Image src={ridethetempoLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
             </div>
             </>

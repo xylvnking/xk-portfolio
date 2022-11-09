@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
 
 import styles from './Nav.module.scss'
@@ -15,6 +15,31 @@ export default function Nav() {
     optical scale: 40px
 
     */
+    const [show, setShow] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    // const [dropDownToggled, setDropDownToggled] = useState(false)
+
+    const controlNavbar = () => {
+        if (typeof window !== 'undefined') {
+            if (window.scrollY > lastScrollY) {
+                setShow(false);
+                // console.log('yermt')
+            } else {
+                // console.log('yer')
+                setShow(true);
+            }
+            setLastScrollY(window.scrollY);
+        }
+    };
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', controlNavbar);
+            return () => {
+                window.removeEventListener('scroll', controlNavbar);
+            };
+        }
+    }, [lastScrollY]);
 
   return (
       <>
@@ -24,7 +49,8 @@ export default function Nav() {
             <link rel="icon" href="favicon.ico?v=1.1"/>
         </Head> */}
       
-    <div id={styles['container']}>
+    <div id={styles['container']} className={show ? `${styles.active}` : `${styles.hidden}`}>
+        
         <nav>
             <Link href='/' >
                 {/* <p className={styles.link}>Home</p> */}

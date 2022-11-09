@@ -17,6 +17,15 @@ $max-width: 1500px;
 
 .underline { text-decoration: underline; cursor: pointer;}
 
+.active {
+    transition: opacity .2s;
+}
+.hidden {
+    opacity: 0%;
+    transition: opacity .2s;
+
+}
+
 #container {
     // background-color: $purple;
     font-family: 'Poppins', sans-serif;
@@ -25,10 +34,11 @@ $max-width: 1500px;
     top: -1px;
     // position: fixed;
     color: white;
-    max-width: $max-width;
-    margin: auto;
     z-index: 999;
+    
     nav {
+        margin: auto;
+        max-width: $max-width;
         // padding-top: -10px;
         // dis
         display: flex;

@@ -11,9 +11,9 @@ export default function Contact() {
   return (
       <>
       
-        <div id={styles["backgroundTest"]}>
+        {/* <div id={styles["backgroundTest"]}>
             <Image src={whitegold} objectFit='contain'  />
-        </div>
+        </div> */}
     <div id={styles["contactContainer"]}>
         <article id={styles["contactCard"]}>
             <div id={styles["contactPhoto"]}>
