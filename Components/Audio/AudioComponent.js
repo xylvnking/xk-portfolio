@@ -12,6 +12,7 @@ import Playlists from './Playlists'
 import Working from './Working'
 import Contact from './Contact'
 import Nav from '../Nav'
+import Blog from './Blog'
 
 
 
@@ -38,6 +39,9 @@ export default function AudioComponent() {
                 <section id={styles["playlists"]}>
                     <Playlists />
                 </section>
+                {/* <section id={styles["blog"]}>
+                    <Blog />
+                </section> */}
                 {/* <section id={styles["working"]}>
                     <Working />
                 </section> */}
