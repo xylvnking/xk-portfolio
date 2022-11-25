@@ -401,6 +401,24 @@ $noisebackground: url('/static/backgrounds/noise3.png');
             }
         }
     }
+    #youtube {
+        #youtubeContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            padding: 50px 10px 20px 10px;
+            
+            .youtubeIframe {
+                @media(max-width: 400px) {
+                    height: 200px;
+                }
+                box-shadow: $card-shadow;
+                // box-shadow: $subtle-shadow;
+            }
+        }
+    }
     #playlists {
         position: relative;
         z-index: 2;

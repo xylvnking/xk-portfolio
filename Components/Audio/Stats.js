@@ -121,7 +121,6 @@ export default function Stats() {
                 <div className={styles.pressLogoWrapper}>
                     <Image src={bullettLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>
-                
                 <div className={styles.pressLogoWrapper}>
                     <Image src={conexLogo} objectFit='contain' quality={2} priority='true'/>
                 </div>

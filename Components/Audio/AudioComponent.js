@@ -13,6 +13,7 @@ import Working from './Working'
 import Contact from './Contact'
 import Nav from '../Nav'
 import Blog from './Blog'
+import Youtube from './Youtube'
 
 
 
@@ -33,15 +34,20 @@ export default function AudioComponent() {
                 <section id={styles["stats"]}>
                     <Stats />
                 </section>
+                <section id={styles["youtube"]}>
+                    <Youtube />
+                </section>
                 <section id={styles["about"]}>
                     <About/>
                 </section>
+
+
                 <section id={styles["playlists"]}>
                     <Playlists />
                 </section>
-                {/* <section id={styles["blog"]}>
-                    <Blog />
-                </section> */}
+                    {/* <section id={styles["blog"]}>
+                        <Blog />
+                    </section> */}
                 {/* <section id={styles["working"]}>
                     <Working />
                 </section> */}
