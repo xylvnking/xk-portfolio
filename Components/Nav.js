@@ -1,20 +1,10 @@
 import Link from 'next/link'
 import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
-
 import styles from './Nav.module.scss'
 
 export default function Nav() {
 
-    /*
-    svg params::
-
-    fill: 0
-    weight: 400
-    grade: 0
-    optical scale: 40px
-
-    */
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 

@@ -34,9 +34,9 @@ export default function AudioComponent() {
                 <section id={styles["stats"]}>
                     <Stats />
                 </section>
-                <section id={styles["youtube"]}>
+                {/* <section id={styles["youtube"]}>
                     <Youtube />
-                </section>
+                </section> */}
                 <section id={styles["about"]}>
                     <About/>
                 </section>
